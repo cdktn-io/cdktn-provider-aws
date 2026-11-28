@@ -4,7 +4,7 @@
 
 ### DataAwsVpc <a name="DataAwsVpc" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpc"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc aws_vpc}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc aws_vpc}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.Initializer"></a>
 
@@ -476,7 +476,7 @@ The construct id used in the generated config for the DataAwsVpc to import.
 
 The id of the existing DataAwsVpc that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -515,6 +515,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.property.ipv6CidrBlockAssociations">Ipv6CidrBlockAssociations</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList">DataAwsVpcIpv6CidrBlockAssociationsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.property.mainRouteTableId">MainRouteTableId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.property.networkFirewallAssociation">NetworkFirewallAssociation</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList">DataAwsVpcNetworkFirewallAssociationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.property.ownerId">OwnerId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcTimeoutsOutputReference">DataAwsVpcTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.property.cidrBlockInput">CidrBlockInput</a></code> | <code>string</code> | *No description.* |
@@ -765,6 +766,16 @@ public string MainRouteTableId { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `NetworkFirewallAssociation`<sup>Required</sup> <a name="NetworkFirewallAssociation" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.property.networkFirewallAssociation"></a>
+
+```csharp
+public DataAwsVpcNetworkFirewallAssociationList NetworkFirewallAssociation { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList">DataAwsVpcNetworkFirewallAssociationList</a>
 
 ---
 
@@ -1019,14 +1030,14 @@ new DataAwsVpcConfig {
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.cidrBlock">CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#cidr_block DataAwsVpc#cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.default">Default</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#default DataAwsVpc#default}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.dhcpOptionsId">DhcpOptionsId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#dhcp_options_id DataAwsVpc#dhcp_options_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.cidrBlock">CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#cidr_block DataAwsVpc#cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.default">Default</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#default DataAwsVpc#default}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.dhcpOptionsId">DhcpOptionsId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#dhcp_options_id DataAwsVpc#dhcp_options_id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.filter">Filter</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcFilter">DataAwsVpcFilter</a>[]</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#id DataAwsVpc#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#id DataAwsVpc#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.state">State</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#state DataAwsVpc#state}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#tags DataAwsVpc#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.state">State</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#state DataAwsVpc#state}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#tags DataAwsVpc#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcTimeouts">DataAwsVpcTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1109,7 +1120,7 @@ public string CidrBlock { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#cidr_block DataAwsVpc#cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#cidr_block DataAwsVpc#cidr_block}.
 
 ---
 
@@ -1121,7 +1132,7 @@ public bool|IResolvable Default { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#default DataAwsVpc#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#default DataAwsVpc#default}.
 
 ---
 
@@ -1133,7 +1144,7 @@ public string DhcpOptionsId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#dhcp_options_id DataAwsVpc#dhcp_options_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#dhcp_options_id DataAwsVpc#dhcp_options_id}.
 
 ---
 
@@ -1147,7 +1158,7 @@ public IResolvable|DataAwsVpcFilter[] Filter { get; set; }
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#filter DataAwsVpc#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#filter DataAwsVpc#filter}
 
 ---
 
@@ -1159,7 +1170,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#id DataAwsVpc#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#id DataAwsVpc#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1176,7 +1187,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#region DataAwsVpc#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#region DataAwsVpc#region}
 
 ---
 
@@ -1188,7 +1199,7 @@ public string State { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#state DataAwsVpc#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#state DataAwsVpc#state}.
 
 ---
 
@@ -1200,7 +1211,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#tags DataAwsVpc#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#tags DataAwsVpc#tags}.
 
 ---
 
@@ -1214,7 +1225,7 @@ public DataAwsVpcTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#timeouts DataAwsVpc#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#timeouts DataAwsVpc#timeouts}
 
 ---
 
@@ -1235,8 +1246,8 @@ new DataAwsVpcFilter {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcFilter.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#name DataAwsVpc#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcFilter.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#values DataAwsVpc#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcFilter.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#name DataAwsVpc#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcFilter.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#values DataAwsVpc#values}. |
 
 ---
 
@@ -1248,7 +1259,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#name DataAwsVpc#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#name DataAwsVpc#name}.
 
 ---
 
@@ -1260,7 +1271,7 @@ public string[] Values { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#values DataAwsVpc#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#values DataAwsVpc#values}.
 
 ---
 
@@ -1272,6 +1283,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using Io.Cdktn.Providers.Aws;
 
 new DataAwsVpcIpv6CidrBlockAssociations {
+
+};
+```
+
+
+### DataAwsVpcNetworkFirewallAssociation <a name="DataAwsVpcNetworkFirewallAssociation" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociation"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociation.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Aws;
+
+new DataAwsVpcNetworkFirewallAssociation {
 
 };
 ```
@@ -1293,7 +1317,7 @@ new DataAwsVpcTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#read DataAwsVpc#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#read DataAwsVpc#read}. |
 
 ---
 
@@ -1305,7 +1329,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/vpc#read DataAwsVpc#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/vpc#read DataAwsVpc#read}.
 
 ---
 
@@ -2720,6 +2744,455 @@ public DataAwsVpcIpv6CidrBlockAssociations InternalValue { get; }
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociations">DataAwsVpcIpv6CidrBlockAssociations</a>
+
+---
+
+
+### DataAwsVpcNetworkFirewallAssociationList <a name="DataAwsVpcNetworkFirewallAssociationList" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Aws;
+
+new DataAwsVpcNetworkFirewallAssociationList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.get"></a>
+
+```csharp
+private DataAwsVpcNetworkFirewallAssociationOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+
+### DataAwsVpcNetworkFirewallAssociationOutputReference <a name="DataAwsVpcNetworkFirewallAssociationOutputReference" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Aws;
+
+new DataAwsVpcNetworkFirewallAssociationOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.property.firewallArn">FirewallArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.property.firewallMode">FirewallMode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.property.firewallOnboardingStatus">FirewallOnboardingStatus</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociation">DataAwsVpcNetworkFirewallAssociation</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `FirewallArn`<sup>Required</sup> <a name="FirewallArn" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.property.firewallArn"></a>
+
+```csharp
+public string FirewallArn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `FirewallMode`<sup>Required</sup> <a name="FirewallMode" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.property.firewallMode"></a>
+
+```csharp
+public string FirewallMode { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `FirewallOnboardingStatus`<sup>Required</sup> <a name="FirewallOnboardingStatus" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.property.firewallOnboardingStatus"></a>
+
+```csharp
+public string FirewallOnboardingStatus { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociationOutputReference.property.internalValue"></a>
+
+```csharp
+public DataAwsVpcNetworkFirewallAssociation InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcNetworkFirewallAssociation">DataAwsVpcNetworkFirewallAssociation</a>
 
 ---
 

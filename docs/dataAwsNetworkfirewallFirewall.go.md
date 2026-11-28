@@ -4,7 +4,7 @@
 
 ### DataAwsNetworkfirewallFirewall <a name="DataAwsNetworkfirewallFirewall" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.Initializer"></a>
 
@@ -69,6 +69,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.resetArn">ResetArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.resetFirewallType">ResetFirewallType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.resetRegion">ResetRegion</a></code> | *No description.* |
@@ -295,6 +296,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 func ResetArn()
 ```
 
+##### `ResetFirewallType` <a name="ResetFirewallType" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.resetFirewallType"></a>
+
+```go
+func ResetFirewallType()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.resetId"></a>
 
 ```go
@@ -422,7 +429,7 @@ The construct id used in the generated config for the DataAwsNetworkfirewallFire
 
 The id of the existing DataAwsNetworkfirewallFirewall that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/networkfirewall_firewall#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/networkfirewall_firewall#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -459,6 +466,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.firewallPolicyArn">FirewallPolicyArn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.firewallPolicyChangeProtection">FirewallPolicyChangeProtection</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.firewallStatus">FirewallStatus</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallFirewallStatusList">DataAwsNetworkfirewallFirewallFirewallStatusList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.igwFirewallConfiguration">IgwFirewallConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList">DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.subnetChangeProtection">SubnetChangeProtection</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.subnetMapping">SubnetMapping</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallSubnetMappingList">DataAwsNetworkfirewallFirewallSubnetMappingList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.transitGatewayId">TransitGatewayId</a></code> | <code>*string</code> | *No description.* |
@@ -466,11 +474,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.updateToken">UpdateToken</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.vpcId">VpcId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.arnInput">ArnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.firewallTypeInput">FirewallTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.firewallType">FirewallType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.region">Region</a></code> | <code>*string</code> | *No description.* |
@@ -690,6 +700,16 @@ func FirewallStatus() DataAwsNetworkfirewallFirewallFirewallStatusList
 
 ---
 
+##### `IgwFirewallConfiguration`<sup>Required</sup> <a name="IgwFirewallConfiguration" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.igwFirewallConfiguration"></a>
+
+```go
+func IgwFirewallConfiguration() DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList">DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList</a>
+
+---
+
 ##### `SubnetChangeProtection`<sup>Required</sup> <a name="SubnetChangeProtection" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.subnetChangeProtection"></a>
 
 ```go
@@ -760,6 +780,16 @@ func ArnInput() *string
 
 ---
 
+##### `FirewallTypeInput`<sup>Optional</sup> <a name="FirewallTypeInput" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.firewallTypeInput"></a>
+
+```go
+func FirewallTypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.idInput"></a>
 
 ```go
@@ -804,6 +834,16 @@ func TagsInput() *map[string]*string
 
 ```go
 func Arn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FirewallType`<sup>Required</sup> <a name="FirewallType" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall.property.firewallType"></a>
+
+```go
+func FirewallType() *string
 ```
 
 - *Type:* *string
@@ -899,6 +939,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkfirewall
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Arn: *string,
+	FirewallType: *string,
 	Id: *string,
 	Name: *string,
 	Region: *string,
@@ -917,11 +958,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkfirewall
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/networkfirewall_firewall#arn DataAwsNetworkfirewallFirewall#arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/networkfirewall_firewall#id DataAwsNetworkfirewallFirewall#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/networkfirewall_firewall#name DataAwsNetworkfirewallFirewall#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/networkfirewall_firewall#arn DataAwsNetworkfirewallFirewall#arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallConfig.property.firewallType">FirewallType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/networkfirewall_firewall#firewall_type DataAwsNetworkfirewallFirewall#firewall_type}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/networkfirewall_firewall#id DataAwsNetworkfirewallFirewall#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/networkfirewall_firewall#name DataAwsNetworkfirewallFirewall#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/networkfirewall_firewall#tags DataAwsNetworkfirewallFirewall#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/networkfirewall_firewall#tags DataAwsNetworkfirewallFirewall#tags}. |
 
 ---
 
@@ -1003,7 +1045,19 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/networkfirewall_firewall#arn DataAwsNetworkfirewallFirewall#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/networkfirewall_firewall#arn DataAwsNetworkfirewallFirewall#arn}.
+
+---
+
+##### `FirewallType`<sup>Optional</sup> <a name="FirewallType" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallConfig.property.firewallType"></a>
+
+```go
+FirewallType *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/networkfirewall_firewall#firewall_type DataAwsNetworkfirewallFirewall#firewall_type}.
 
 ---
 
@@ -1015,7 +1069,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/networkfirewall_firewall#id DataAwsNetworkfirewallFirewall#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/networkfirewall_firewall#id DataAwsNetworkfirewallFirewall#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1030,7 +1084,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/networkfirewall_firewall#name DataAwsNetworkfirewallFirewall#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/networkfirewall_firewall#name DataAwsNetworkfirewallFirewall#name}.
 
 ---
 
@@ -1044,7 +1098,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/networkfirewall_firewall#region DataAwsNetworkfirewallFirewall#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/networkfirewall_firewall#region DataAwsNetworkfirewallFirewall#region}
 
 ---
 
@@ -1056,7 +1110,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/networkfirewall_firewall#tags DataAwsNetworkfirewallFirewall#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/networkfirewall_firewall#tags DataAwsNetworkfirewallFirewall#tags}.
 
 ---
 
@@ -1159,6 +1213,19 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkfirewall
 import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkfirewallfirewall"
 
 &dataawsnetworkfirewallfirewall.DataAwsNetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStates {
+
+}
+```
+
+
+### DataAwsNetworkfirewallFirewallIgwFirewallConfiguration <a name="DataAwsNetworkfirewallFirewallIgwFirewallConfiguration" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfiguration"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfiguration.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkfirewallfirewall"
+
+&dataawsnetworkfirewallfirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfiguration {
 
 }
 ```
@@ -5161,6 +5228,433 @@ func InternalValue() DataAwsNetworkfirewallFirewallFirewallStatusTransitGatewayA
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStates">DataAwsNetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStates</a>
+
+---
+
+
+### DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList <a name="DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkfirewallfirewall"
+
+dataawsnetworkfirewallfirewall.NewDataAwsNetworkfirewallFirewallIgwFirewallConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.get"></a>
+
+```go
+func Get(index *f64) DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference <a name="DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkfirewallfirewall"
+
+dataawsnetworkfirewallfirewall.NewDataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.property.enforcementMode">EnforcementMode</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfiguration">DataAwsNetworkfirewallFirewallIgwFirewallConfiguration</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `EnforcementMode`<sup>Required</sup> <a name="EnforcementMode" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.property.enforcementMode"></a>
+
+```go
+func EnforcementMode() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfigurationOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataAwsNetworkfirewallFirewallIgwFirewallConfiguration
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallIgwFirewallConfiguration">DataAwsNetworkfirewallFirewallIgwFirewallConfiguration</a>
 
 ---
 

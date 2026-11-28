@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object
+// https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,132 +13,144 @@ import * as cdktn from 'cdktn';
 
 export interface S3ObjectConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#acl S3Object#acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#acl S3Object#acl}
   */
   readonly acl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#bucket S3Object#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#bucket S3Object#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#bucket_key_enabled S3Object#bucket_key_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#bucket_key_enabled S3Object#bucket_key_enabled}
   */
   readonly bucketKeyEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#cache_control S3Object#cache_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#cache_control S3Object#cache_control}
   */
   readonly cacheControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#checksum_algorithm S3Object#checksum_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#checksum_algorithm S3Object#checksum_algorithm}
   */
   readonly checksumAlgorithm?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#content S3Object#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#content S3Object#content}
   */
   readonly content?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#content_base64 S3Object#content_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#content_base64 S3Object#content_base64}
   */
   readonly contentBase64?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#content_disposition S3Object#content_disposition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#content_disposition S3Object#content_disposition}
   */
   readonly contentDisposition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#content_encoding S3Object#content_encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#content_encoding S3Object#content_encoding}
   */
   readonly contentEncoding?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#content_language S3Object#content_language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#content_language S3Object#content_language}
   */
   readonly contentLanguage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#content_type S3Object#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#content_type S3Object#content_type}
   */
   readonly contentType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#etag S3Object#etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#etag S3Object#etag}
   */
   readonly etag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#force_destroy S3Object#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#force_destroy S3Object#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#id S3Object#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#id S3Object#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#key S3Object#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#key S3Object#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#kms_key_id S3Object#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#kms_key_id S3Object#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#metadata S3Object#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#metadata S3Object#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#object_lock_legal_hold_status S3Object#object_lock_legal_hold_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#object_lock_event_hold S3Object#object_lock_event_hold}
+  */
+  readonly objectLockEventHold?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#object_lock_event_hold_duration_days S3Object#object_lock_event_hold_duration_days}
+  */
+  readonly objectLockEventHoldDurationDays?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#object_lock_event_hold_duration_years S3Object#object_lock_event_hold_duration_years}
+  */
+  readonly objectLockEventHoldDurationYears?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#object_lock_legal_hold_status S3Object#object_lock_legal_hold_status}
   */
   readonly objectLockLegalHoldStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#object_lock_mode S3Object#object_lock_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#object_lock_mode S3Object#object_lock_mode}
   */
   readonly objectLockMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#object_lock_retain_until_date S3Object#object_lock_retain_until_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#object_lock_retain_until_date S3Object#object_lock_retain_until_date}
   */
   readonly objectLockRetainUntilDate?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#region S3Object#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#region S3Object#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#server_side_encryption S3Object#server_side_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#server_side_encryption S3Object#server_side_encryption}
   */
   readonly serverSideEncryption?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#source S3Object#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#source S3Object#source}
   */
   readonly source?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#source_hash S3Object#source_hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#source_hash S3Object#source_hash}
   */
   readonly sourceHash?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#storage_class S3Object#storage_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#storage_class S3Object#storage_class}
   */
   readonly storageClass?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#tags S3Object#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#tags S3Object#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#tags_all S3Object#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#tags_all S3Object#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#website_redirect S3Object#website_redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#website_redirect S3Object#website_redirect}
   */
   readonly websiteRedirect?: string;
   /**
   * override_provider block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#override_provider S3Object#override_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#override_provider S3Object#override_provider}
   */
   readonly overrideProvider?: S3ObjectOverrideProvider;
 }
 export interface S3ObjectOverrideProviderDefaultTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#tags S3Object#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#tags S3Object#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -224,7 +236,7 @@ export interface S3ObjectOverrideProvider {
   /**
   * default_tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#default_tags S3Object#default_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#default_tags S3Object#default_tags}
   */
   readonly defaultTags?: S3ObjectOverrideProviderDefaultTags;
 }
@@ -308,7 +320,7 @@ export class S3ObjectOverrideProviderOutputReference extends cdktn.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object aws_s3_object}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object aws_s3_object}
 */
 export class S3Object extends cdktn.TerraformResource {
 
@@ -324,7 +336,7 @@ export class S3Object extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a S3Object resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3Object to import
-  * @param importFromId The id of the existing S3Object that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3Object that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3Object to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -336,7 +348,7 @@ export class S3Object extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_object aws_s3_object} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_object aws_s3_object} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -347,7 +359,7 @@ export class S3Object extends cdktn.TerraformResource {
       terraformResourceType: 'aws_s3_object',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.71.0',
+        providerVersion: '6.74.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -375,6 +387,9 @@ export class S3Object extends cdktn.TerraformResource {
     this._key = config.key;
     this._kmsKeyId = config.kmsKeyId;
     this._metadata = config.metadata;
+    this._objectLockEventHold = config.objectLockEventHold;
+    this._objectLockEventHoldDurationDays = config.objectLockEventHoldDurationDays;
+    this._objectLockEventHoldDurationYears = config.objectLockEventHoldDurationYears;
     this._objectLockLegalHoldStatus = config.objectLockLegalHoldStatus;
     this._objectLockMode = config.objectLockMode;
     this._objectLockRetainUntilDate = config.objectLockRetainUntilDate;
@@ -689,6 +704,54 @@ export class S3Object extends cdktn.TerraformResource {
     return this._metadata;
   }
 
+  // object_lock_event_hold - computed: true, optional: true, required: false
+  private _objectLockEventHold?: string; 
+  public get objectLockEventHold() {
+    return this.getStringAttribute('object_lock_event_hold');
+  }
+  public set objectLockEventHold(value: string) {
+    this._objectLockEventHold = value;
+  }
+  public resetObjectLockEventHold() {
+    this._objectLockEventHold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get objectLockEventHoldInput() {
+    return this._objectLockEventHold;
+  }
+
+  // object_lock_event_hold_duration_days - computed: true, optional: true, required: false
+  private _objectLockEventHoldDurationDays?: number; 
+  public get objectLockEventHoldDurationDays() {
+    return this.getNumberAttribute('object_lock_event_hold_duration_days');
+  }
+  public set objectLockEventHoldDurationDays(value: number) {
+    this._objectLockEventHoldDurationDays = value;
+  }
+  public resetObjectLockEventHoldDurationDays() {
+    this._objectLockEventHoldDurationDays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get objectLockEventHoldDurationDaysInput() {
+    return this._objectLockEventHoldDurationDays;
+  }
+
+  // object_lock_event_hold_duration_years - computed: true, optional: true, required: false
+  private _objectLockEventHoldDurationYears?: number; 
+  public get objectLockEventHoldDurationYears() {
+    return this.getNumberAttribute('object_lock_event_hold_duration_years');
+  }
+  public set objectLockEventHoldDurationYears(value: number) {
+    this._objectLockEventHoldDurationYears = value;
+  }
+  public resetObjectLockEventHoldDurationYears() {
+    this._objectLockEventHoldDurationYears = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get objectLockEventHoldDurationYearsInput() {
+    return this._objectLockEventHoldDurationYears;
+  }
+
   // object_lock_legal_hold_status - computed: false, optional: true, required: false
   private _objectLockLegalHoldStatus?: string; 
   public get objectLockLegalHoldStatus() {
@@ -721,7 +784,7 @@ export class S3Object extends cdktn.TerraformResource {
     return this._objectLockMode;
   }
 
-  // object_lock_retain_until_date - computed: false, optional: true, required: false
+  // object_lock_retain_until_date - computed: true, optional: true, required: false
   private _objectLockRetainUntilDate?: string; 
   public get objectLockRetainUntilDate() {
     return this.getStringAttribute('object_lock_retain_until_date');
@@ -909,6 +972,9 @@ export class S3Object extends cdktn.TerraformResource {
       key: cdktn.stringToTerraform(this._key),
       kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
       metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._metadata),
+      object_lock_event_hold: cdktn.stringToTerraform(this._objectLockEventHold),
+      object_lock_event_hold_duration_days: cdktn.numberToTerraform(this._objectLockEventHoldDurationDays),
+      object_lock_event_hold_duration_years: cdktn.numberToTerraform(this._objectLockEventHoldDurationYears),
       object_lock_legal_hold_status: cdktn.stringToTerraform(this._objectLockLegalHoldStatus),
       object_lock_mode: cdktn.stringToTerraform(this._objectLockMode),
       object_lock_retain_until_date: cdktn.stringToTerraform(this._objectLockRetainUntilDate),
@@ -1027,6 +1093,24 @@ export class S3Object extends cdktn.TerraformResource {
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
+      },
+      object_lock_event_hold: {
+        value: cdktn.stringToHclTerraform(this._objectLockEventHold),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      object_lock_event_hold_duration_days: {
+        value: cdktn.numberToHclTerraform(this._objectLockEventHoldDurationDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      object_lock_event_hold_duration_years: {
+        value: cdktn.numberToHclTerraform(this._objectLockEventHoldDurationYears),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       object_lock_legal_hold_status: {
         value: cdktn.stringToHclTerraform(this._objectLockLegalHoldStatus),

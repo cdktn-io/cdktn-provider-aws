@@ -4,7 +4,7 @@
 
 ### DataAwsS3Object <a name="DataAwsS3Object" id="@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object aws_s3_object}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object aws_s3_object}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer"></a>
 
@@ -44,15 +44,15 @@ dataAwsS3Object.DataAwsS3Object(
 | <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer.parameter.bucket">bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#bucket DataAwsS3Object#bucket}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer.parameter.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#key DataAwsS3Object#key}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer.parameter.checksumMode">checksum_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#checksum_mode DataAwsS3Object#checksum_mode}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer.parameter.downloadBody">download_body</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#download_body DataAwsS3Object#download_body}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#id DataAwsS3Object#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer.parameter.range">range</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#range DataAwsS3Object#range}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer.parameter.bucket">bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#bucket DataAwsS3Object#bucket}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer.parameter.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#key DataAwsS3Object#key}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer.parameter.checksumMode">checksum_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#checksum_mode DataAwsS3Object#checksum_mode}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer.parameter.downloadBody">download_body</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#download_body DataAwsS3Object#download_body}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#id DataAwsS3Object#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer.parameter.range">range</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#range DataAwsS3Object#range}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#tags DataAwsS3Object#tags}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer.parameter.versionId">version_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#version_id DataAwsS3Object#version_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#tags DataAwsS3Object#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer.parameter.versionId">version_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#version_id DataAwsS3Object#version_id}. |
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#bucket DataAwsS3Object#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#bucket DataAwsS3Object#bucket}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#key DataAwsS3Object#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#key DataAwsS3Object#key}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#checksum_mode DataAwsS3Object#checksum_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#checksum_mode DataAwsS3Object#checksum_mode}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#download_body DataAwsS3Object#download_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#download_body DataAwsS3Object#download_body}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#id DataAwsS3Object#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#id DataAwsS3Object#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -163,7 +163,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#range DataAwsS3Object#range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#range DataAwsS3Object#range}.
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#region DataAwsS3Object#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#region DataAwsS3Object#region}
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#tags DataAwsS3Object#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#tags DataAwsS3Object#tags}.
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#version_id DataAwsS3Object#version_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#version_id DataAwsS3Object#version_id}.
 
 ---
 
@@ -621,7 +621,7 @@ The construct id used in the generated config for the DataAwsS3Object to import.
 
 The id of the existing DataAwsS3Object that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -669,6 +669,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0
 | <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.property.expires">expires</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.property.lastModified">last_modified</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.property.metadata">metadata</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.property.objectLockEventHold">object_lock_event_hold</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.property.objectLockEventHoldDurationDays">object_lock_event_hold_duration_days</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.property.objectLockEventHoldDurationYears">object_lock_event_hold_duration_years</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.property.objectLockLegalHoldStatus">object_lock_legal_hold_status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.property.objectLockMode">object_lock_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.property.objectLockRetainUntilDate">object_lock_retain_until_date</a></code> | <code>str</code> | *No description.* |
@@ -1019,6 +1022,36 @@ metadata: StringMap
 
 ---
 
+##### `object_lock_event_hold`<sup>Required</sup> <a name="object_lock_event_hold" id="@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.property.objectLockEventHold"></a>
+
+```python
+object_lock_event_hold: str
+```
+
+- *Type:* str
+
+---
+
+##### `object_lock_event_hold_duration_days`<sup>Required</sup> <a name="object_lock_event_hold_duration_days" id="@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.property.objectLockEventHoldDurationDays"></a>
+
+```python
+object_lock_event_hold_duration_days: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `object_lock_event_hold_duration_years`<sup>Required</sup> <a name="object_lock_event_hold_duration_years" id="@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.property.objectLockEventHoldDurationYears"></a>
+
+```python
+object_lock_event_hold_duration_years: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `object_lock_legal_hold_status`<sup>Required</sup> <a name="object_lock_legal_hold_status" id="@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object.property.objectLockLegalHoldStatus"></a>
 
 ```python
@@ -1327,15 +1360,15 @@ dataAwsS3Object.DataAwsS3ObjectConfig(
 | <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig.property.bucket">bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#bucket DataAwsS3Object#bucket}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#key DataAwsS3Object#key}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig.property.checksumMode">checksum_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#checksum_mode DataAwsS3Object#checksum_mode}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig.property.downloadBody">download_body</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#download_body DataAwsS3Object#download_body}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#id DataAwsS3Object#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig.property.range">range</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#range DataAwsS3Object#range}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig.property.bucket">bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#bucket DataAwsS3Object#bucket}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#key DataAwsS3Object#key}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig.property.checksumMode">checksum_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#checksum_mode DataAwsS3Object#checksum_mode}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig.property.downloadBody">download_body</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#download_body DataAwsS3Object#download_body}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#id DataAwsS3Object#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig.property.range">range</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#range DataAwsS3Object#range}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#tags DataAwsS3Object#tags}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig.property.versionId">version_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#version_id DataAwsS3Object#version_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#tags DataAwsS3Object#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig.property.versionId">version_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#version_id DataAwsS3Object#version_id}. |
 
 ---
 
@@ -1417,7 +1450,7 @@ bucket: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#bucket DataAwsS3Object#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#bucket DataAwsS3Object#bucket}.
 
 ---
 
@@ -1429,7 +1462,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#key DataAwsS3Object#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#key DataAwsS3Object#key}.
 
 ---
 
@@ -1441,7 +1474,7 @@ checksum_mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#checksum_mode DataAwsS3Object#checksum_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#checksum_mode DataAwsS3Object#checksum_mode}.
 
 ---
 
@@ -1453,7 +1486,7 @@ download_body: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#download_body DataAwsS3Object#download_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#download_body DataAwsS3Object#download_body}.
 
 ---
 
@@ -1465,7 +1498,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#id DataAwsS3Object#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#id DataAwsS3Object#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1480,7 +1513,7 @@ range: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#range DataAwsS3Object#range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#range DataAwsS3Object#range}.
 
 ---
 
@@ -1494,7 +1527,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#region DataAwsS3Object#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#region DataAwsS3Object#region}
 
 ---
 
@@ -1506,7 +1539,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#tags DataAwsS3Object#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#tags DataAwsS3Object#tags}.
 
 ---
 
@@ -1518,7 +1551,7 @@ version_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/s3_object#version_id DataAwsS3Object#version_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/s3_object#version_id DataAwsS3Object#version_id}.
 
 ---
 

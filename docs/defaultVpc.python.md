@@ -4,7 +4,7 @@
 
 ### DefaultVpc <a name="DefaultVpc" id="@cdktn/provider-aws.defaultVpc.DefaultVpc"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc aws_default_vpc}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc aws_default_vpc}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer"></a>
 
@@ -48,19 +48,19 @@ defaultVpc.DefaultVpc(
 | <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.assignGeneratedIpv6CidrBlock">assign_generated_ipv6_cidr_block</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#assign_generated_ipv6_cidr_block DefaultVpc#assign_generated_ipv6_cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.enableDnsHostnames">enable_dns_hostnames</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#enable_dns_hostnames DefaultVpc#enable_dns_hostnames}. |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.enableDnsSupport">enable_dns_support</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#enable_dns_support DefaultVpc#enable_dns_support}. |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.enableNetworkAddressUsageMetrics">enable_network_address_usage_metrics</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#enable_network_address_usage_metrics DefaultVpc#enable_network_address_usage_metrics}. |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.forceDestroy">force_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#force_destroy DefaultVpc#force_destroy}. |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#id DefaultVpc#id}. |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.ipv6CidrBlock">ipv6_cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#ipv6_cidr_block DefaultVpc#ipv6_cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.ipv6CidrBlockNetworkBorderGroup">ipv6_cidr_block_network_border_group</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#ipv6_cidr_block_network_border_group DefaultVpc#ipv6_cidr_block_network_border_group}. |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.ipv6IpamPoolId">ipv6_ipam_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#ipv6_ipam_pool_id DefaultVpc#ipv6_ipam_pool_id}. |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.ipv6NetmaskLength">ipv6_netmask_length</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#ipv6_netmask_length DefaultVpc#ipv6_netmask_length}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.assignGeneratedIpv6CidrBlock">assign_generated_ipv6_cidr_block</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#assign_generated_ipv6_cidr_block DefaultVpc#assign_generated_ipv6_cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.enableDnsHostnames">enable_dns_hostnames</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#enable_dns_hostnames DefaultVpc#enable_dns_hostnames}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.enableDnsSupport">enable_dns_support</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#enable_dns_support DefaultVpc#enable_dns_support}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.enableNetworkAddressUsageMetrics">enable_network_address_usage_metrics</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#enable_network_address_usage_metrics DefaultVpc#enable_network_address_usage_metrics}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.forceDestroy">force_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#force_destroy DefaultVpc#force_destroy}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#id DefaultVpc#id}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.ipv6CidrBlock">ipv6_cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#ipv6_cidr_block DefaultVpc#ipv6_cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.ipv6CidrBlockNetworkBorderGroup">ipv6_cidr_block_network_border_group</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#ipv6_cidr_block_network_border_group DefaultVpc#ipv6_cidr_block_network_border_group}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.ipv6IpamPoolId">ipv6_ipam_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#ipv6_ipam_pool_id DefaultVpc#ipv6_ipam_pool_id}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.ipv6NetmaskLength">ipv6_netmask_length</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#ipv6_netmask_length DefaultVpc#ipv6_netmask_length}. |
 | <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#tags DefaultVpc#tags}. |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#tags_all DefaultVpc#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#tags DefaultVpc#tags}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#tags_all DefaultVpc#tags_all}. |
 
 ---
 
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#assign_generated_ipv6_cidr_block DefaultVpc#assign_generated_ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#assign_generated_ipv6_cidr_block DefaultVpc#assign_generated_ipv6_cidr_block}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#enable_dns_hostnames DefaultVpc#enable_dns_hostnames}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#enable_dns_hostnames DefaultVpc#enable_dns_hostnames}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#enable_dns_support DefaultVpc#enable_dns_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#enable_dns_support DefaultVpc#enable_dns_support}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#enable_network_address_usage_metrics DefaultVpc#enable_network_address_usage_metrics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#enable_network_address_usage_metrics DefaultVpc#enable_network_address_usage_metrics}.
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#force_destroy DefaultVpc#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#force_destroy DefaultVpc#force_destroy}.
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#id DefaultVpc#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#id DefaultVpc#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -179,7 +179,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#ipv6_cidr_block DefaultVpc#ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#ipv6_cidr_block DefaultVpc#ipv6_cidr_block}.
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#ipv6_cidr_block_network_border_group DefaultVpc#ipv6_cidr_block_network_border_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#ipv6_cidr_block_network_border_group DefaultVpc#ipv6_cidr_block_network_border_group}.
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#ipv6_ipam_pool_id DefaultVpc#ipv6_ipam_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#ipv6_ipam_pool_id DefaultVpc#ipv6_ipam_pool_id}.
 
 ---
 
@@ -203,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#ipv6_netmask_length DefaultVpc#ipv6_netmask_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#ipv6_netmask_length DefaultVpc#ipv6_netmask_length}.
 
 ---
 
@@ -213,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#region DefaultVpc#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#region DefaultVpc#region}
 
 ---
 
@@ -221,7 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#tags DefaultVpc#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#tags DefaultVpc#tags}.
 
 ---
 
@@ -229,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#tags_all DefaultVpc#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#tags_all DefaultVpc#tags_all}.
 
 ---
 
@@ -817,7 +817,7 @@ The construct id used in the generated config for the DefaultVpc to import.
 
 The id of the existing DefaultVpc that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -857,6 +857,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0
 | <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.property.instanceTenancy">instance_tenancy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.property.ipv6AssociationId">ipv6_association_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.property.mainRouteTableId">main_route_table_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.property.networkFirewallAssociation">network_firewall_association</a></code> | <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList">DefaultVpcNetworkFirewallAssociationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.property.ownerId">owner_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.property.assignGeneratedIpv6CidrBlockInput">assign_generated_ipv6_cidr_block_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpc.property.enableDnsHostnamesInput">enable_dns_hostnames_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -1126,6 +1127,16 @@ main_route_table_id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `network_firewall_association`<sup>Required</sup> <a name="network_firewall_association" id="@cdktn/provider-aws.defaultVpc.DefaultVpc.property.networkFirewallAssociation"></a>
+
+```python
+network_firewall_association: DefaultVpcNetworkFirewallAssociationList
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList">DefaultVpcNetworkFirewallAssociationList</a>
 
 ---
 
@@ -1461,19 +1472,19 @@ defaultVpc.DefaultVpcConfig(
 | <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.assignGeneratedIpv6CidrBlock">assign_generated_ipv6_cidr_block</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#assign_generated_ipv6_cidr_block DefaultVpc#assign_generated_ipv6_cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.enableDnsHostnames">enable_dns_hostnames</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#enable_dns_hostnames DefaultVpc#enable_dns_hostnames}. |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.enableDnsSupport">enable_dns_support</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#enable_dns_support DefaultVpc#enable_dns_support}. |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.enableNetworkAddressUsageMetrics">enable_network_address_usage_metrics</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#enable_network_address_usage_metrics DefaultVpc#enable_network_address_usage_metrics}. |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.forceDestroy">force_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#force_destroy DefaultVpc#force_destroy}. |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#id DefaultVpc#id}. |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.ipv6CidrBlock">ipv6_cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#ipv6_cidr_block DefaultVpc#ipv6_cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.ipv6CidrBlockNetworkBorderGroup">ipv6_cidr_block_network_border_group</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#ipv6_cidr_block_network_border_group DefaultVpc#ipv6_cidr_block_network_border_group}. |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.ipv6IpamPoolId">ipv6_ipam_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#ipv6_ipam_pool_id DefaultVpc#ipv6_ipam_pool_id}. |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.ipv6NetmaskLength">ipv6_netmask_length</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#ipv6_netmask_length DefaultVpc#ipv6_netmask_length}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.assignGeneratedIpv6CidrBlock">assign_generated_ipv6_cidr_block</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#assign_generated_ipv6_cidr_block DefaultVpc#assign_generated_ipv6_cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.enableDnsHostnames">enable_dns_hostnames</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#enable_dns_hostnames DefaultVpc#enable_dns_hostnames}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.enableDnsSupport">enable_dns_support</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#enable_dns_support DefaultVpc#enable_dns_support}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.enableNetworkAddressUsageMetrics">enable_network_address_usage_metrics</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#enable_network_address_usage_metrics DefaultVpc#enable_network_address_usage_metrics}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.forceDestroy">force_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#force_destroy DefaultVpc#force_destroy}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#id DefaultVpc#id}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.ipv6CidrBlock">ipv6_cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#ipv6_cidr_block DefaultVpc#ipv6_cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.ipv6CidrBlockNetworkBorderGroup">ipv6_cidr_block_network_border_group</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#ipv6_cidr_block_network_border_group DefaultVpc#ipv6_cidr_block_network_border_group}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.ipv6IpamPoolId">ipv6_ipam_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#ipv6_ipam_pool_id DefaultVpc#ipv6_ipam_pool_id}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.ipv6NetmaskLength">ipv6_netmask_length</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#ipv6_netmask_length DefaultVpc#ipv6_netmask_length}. |
 | <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#tags DefaultVpc#tags}. |
-| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#tags_all DefaultVpc#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#tags DefaultVpc#tags}. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#tags_all DefaultVpc#tags_all}. |
 
 ---
 
@@ -1555,7 +1566,7 @@ assign_generated_ipv6_cidr_block: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#assign_generated_ipv6_cidr_block DefaultVpc#assign_generated_ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#assign_generated_ipv6_cidr_block DefaultVpc#assign_generated_ipv6_cidr_block}.
 
 ---
 
@@ -1567,7 +1578,7 @@ enable_dns_hostnames: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#enable_dns_hostnames DefaultVpc#enable_dns_hostnames}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#enable_dns_hostnames DefaultVpc#enable_dns_hostnames}.
 
 ---
 
@@ -1579,7 +1590,7 @@ enable_dns_support: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#enable_dns_support DefaultVpc#enable_dns_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#enable_dns_support DefaultVpc#enable_dns_support}.
 
 ---
 
@@ -1591,7 +1602,7 @@ enable_network_address_usage_metrics: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#enable_network_address_usage_metrics DefaultVpc#enable_network_address_usage_metrics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#enable_network_address_usage_metrics DefaultVpc#enable_network_address_usage_metrics}.
 
 ---
 
@@ -1603,7 +1614,7 @@ force_destroy: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#force_destroy DefaultVpc#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#force_destroy DefaultVpc#force_destroy}.
 
 ---
 
@@ -1615,7 +1626,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#id DefaultVpc#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#id DefaultVpc#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1630,7 +1641,7 @@ ipv6_cidr_block: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#ipv6_cidr_block DefaultVpc#ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#ipv6_cidr_block DefaultVpc#ipv6_cidr_block}.
 
 ---
 
@@ -1642,7 +1653,7 @@ ipv6_cidr_block_network_border_group: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#ipv6_cidr_block_network_border_group DefaultVpc#ipv6_cidr_block_network_border_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#ipv6_cidr_block_network_border_group DefaultVpc#ipv6_cidr_block_network_border_group}.
 
 ---
 
@@ -1654,7 +1665,7 @@ ipv6_ipam_pool_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#ipv6_ipam_pool_id DefaultVpc#ipv6_ipam_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#ipv6_ipam_pool_id DefaultVpc#ipv6_ipam_pool_id}.
 
 ---
 
@@ -1666,7 +1677,7 @@ ipv6_netmask_length: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#ipv6_netmask_length DefaultVpc#ipv6_netmask_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#ipv6_netmask_length DefaultVpc#ipv6_netmask_length}.
 
 ---
 
@@ -1680,7 +1691,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#region DefaultVpc#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#region DefaultVpc#region}
 
 ---
 
@@ -1692,7 +1703,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#tags DefaultVpc#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#tags DefaultVpc#tags}.
 
 ---
 
@@ -1704,7 +1715,505 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/default_vpc#tags_all DefaultVpc#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/default_vpc#tags_all DefaultVpc#tags_all}.
+
+---
+
+### DefaultVpcNetworkFirewallAssociation <a name="DefaultVpcNetworkFirewallAssociation" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociation"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociation.Initializer"></a>
+
+```python
+from cdktn_provider_aws import default_vpc
+
+defaultVpc.DefaultVpcNetworkFirewallAssociation()
+```
+
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### DefaultVpcNetworkFirewallAssociationList <a name="DefaultVpcNetworkFirewallAssociationList" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.Initializer"></a>
+
+```python
+from cdktn_provider_aws import default_vpc
+
+defaultVpc.DefaultVpcNetworkFirewallAssociationList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> DefaultVpcNetworkFirewallAssociationOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### DefaultVpcNetworkFirewallAssociationOutputReference <a name="DefaultVpcNetworkFirewallAssociationOutputReference" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_aws import default_vpc
+
+defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.property.firewallArn">firewall_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.property.firewallMode">firewall_mode</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.property.firewallOnboardingStatus">firewall_onboarding_status</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociation">DefaultVpcNetworkFirewallAssociation</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `firewall_arn`<sup>Required</sup> <a name="firewall_arn" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.property.firewallArn"></a>
+
+```python
+firewall_arn: str
+```
+
+- *Type:* str
+
+---
+
+##### `firewall_mode`<sup>Required</sup> <a name="firewall_mode" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.property.firewallMode"></a>
+
+```python
+firewall_mode: str
+```
+
+- *Type:* str
+
+---
+
+##### `firewall_onboarding_status`<sup>Required</sup> <a name="firewall_onboarding_status" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.property.firewallOnboardingStatus"></a>
+
+```python
+firewall_onboarding_status: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociationOutputReference.property.internalValue"></a>
+
+```python
+internal_value: DefaultVpcNetworkFirewallAssociation
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.defaultVpc.DefaultVpcNetworkFirewallAssociation">DefaultVpcNetworkFirewallAssociation</a>
 
 ---
 

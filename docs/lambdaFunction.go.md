@@ -4,7 +4,7 @@
 
 ### LambdaFunction <a name="LambdaFunction" id="@cdktn/provider-aws.lambdaFunction.LambdaFunction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function aws_lambda_function}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function aws_lambda_function}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaFunction.LambdaFunction.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.putAcceleratorConfig">PutAcceleratorConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.putCapacityProviderConfig">PutCapacityProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.putDeadLetterConfig">PutDeadLetterConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.putDurableConfig">PutDurableConfig</a></code> | *No description.* |
@@ -87,6 +88,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.putTracingConfig">PutTracingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.putVpcConfig">PutVpcConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.resetAcceleratorConfig">ResetAcceleratorConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.resetArchitectures">ResetArchitectures</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.resetCapacityProviderConfig">ResetCapacityProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.resetCodeSha256">ResetCodeSha256</a></code> | *No description.* |
@@ -441,6 +443,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutAcceleratorConfig` <a name="PutAcceleratorConfig" id="@cdktn/provider-aws.lambdaFunction.LambdaFunction.putAcceleratorConfig"></a>
+
+```go
+func PutAcceleratorConfig(value LambdaFunctionAcceleratorConfig)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.lambdaFunction.LambdaFunction.putAcceleratorConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfig">LambdaFunctionAcceleratorConfig</a>
+
+---
+
 ##### `PutCapacityProviderConfig` <a name="PutCapacityProviderConfig" id="@cdktn/provider-aws.lambdaFunction.LambdaFunction.putCapacityProviderConfig"></a>
 
 ```go
@@ -596,6 +610,12 @@ func PutVpcConfig(value LambdaFunctionVpcConfig)
 - *Type:* <a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionVpcConfig">LambdaFunctionVpcConfig</a>
 
 ---
+
+##### `ResetAcceleratorConfig` <a name="ResetAcceleratorConfig" id="@cdktn/provider-aws.lambdaFunction.LambdaFunction.resetAcceleratorConfig"></a>
+
+```go
+func ResetAcceleratorConfig()
+```
 
 ##### `ResetArchitectures` <a name="ResetArchitectures" id="@cdktn/provider-aws.lambdaFunction.LambdaFunction.resetArchitectures"></a>
 
@@ -952,7 +972,7 @@ The construct id used in the generated config for the LambdaFunction to import.
 
 The id of the existing LambdaFunction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -982,6 +1002,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.property.acceleratorConfig">AcceleratorConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference">LambdaFunctionAcceleratorConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.property.capacityProviderConfig">CapacityProviderConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionCapacityProviderConfigOutputReference">LambdaFunctionCapacityProviderConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.property.deadLetterConfig">DeadLetterConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionDeadLetterConfigOutputReference">LambdaFunctionDeadLetterConfigOutputReference</a></code> | *No description.* |
@@ -1005,6 +1026,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.property.tracingConfig">TracingConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionTracingConfigOutputReference">LambdaFunctionTracingConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.property.version">Version</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.property.vpcConfig">VpcConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionVpcConfigOutputReference">LambdaFunctionVpcConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.property.acceleratorConfigInput">AcceleratorConfigInput</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfig">LambdaFunctionAcceleratorConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.property.architecturesInput">ArchitecturesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.property.capacityProviderConfigInput">CapacityProviderConfigInput</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionCapacityProviderConfig">LambdaFunctionCapacityProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunction.property.codeSha256Input">CodeSha256Input</a></code> | <code>*string</code> | *No description.* |
@@ -1222,6 +1244,16 @@ func Provisioners() *[]interface{}
 ```
 
 - *Type:* *[]interface{}
+
+---
+
+##### `AcceleratorConfig`<sup>Required</sup> <a name="AcceleratorConfig" id="@cdktn/provider-aws.lambdaFunction.LambdaFunction.property.acceleratorConfig"></a>
+
+```go
+func AcceleratorConfig() LambdaFunctionAcceleratorConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference">LambdaFunctionAcceleratorConfigOutputReference</a>
 
 ---
 
@@ -1452,6 +1484,16 @@ func VpcConfig() LambdaFunctionVpcConfigOutputReference
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionVpcConfigOutputReference">LambdaFunctionVpcConfigOutputReference</a>
+
+---
+
+##### `AcceleratorConfigInput`<sup>Optional</sup> <a name="AcceleratorConfigInput" id="@cdktn/provider-aws.lambdaFunction.LambdaFunction.property.acceleratorConfigInput"></a>
+
+```go
+func AcceleratorConfigInput() LambdaFunctionAcceleratorConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfig">LambdaFunctionAcceleratorConfig</a>
 
 ---
 
@@ -2225,6 +2267,38 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### LambdaFunctionAcceleratorConfig <a name="LambdaFunctionAcceleratorConfig" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfig.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdafunction"
+
+&lambdafunction.LambdaFunctionAcceleratorConfig {
+	AcceleratorMemorySize: *f64,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfig.property.acceleratorMemorySize">AcceleratorMemorySize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#accelerator_memory_size LambdaFunction#accelerator_memory_size}. |
+
+---
+
+##### `AcceleratorMemorySize`<sup>Required</sup> <a name="AcceleratorMemorySize" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfig.property.acceleratorMemorySize"></a>
+
+```go
+AcceleratorMemorySize *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#accelerator_memory_size LambdaFunction#accelerator_memory_size}.
+
+---
+
 ### LambdaFunctionCapacityProviderConfig <a name="LambdaFunctionCapacityProviderConfig" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionCapacityProviderConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionCapacityProviderConfig.Initializer"></a>
@@ -2255,7 +2329,7 @@ LambdaManagedInstancesCapacityProviderConfig LambdaFunctionCapacityProviderConfi
 
 lambda_managed_instances_capacity_provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#lambda_managed_instances_capacity_provider_config LambdaFunction#lambda_managed_instances_capacity_provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#lambda_managed_instances_capacity_provider_config LambdaFunction#lambda_managed_instances_capacity_provider_config}
 
 ---
 
@@ -2277,9 +2351,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdafunction"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfig.property.capacityProviderArn">CapacityProviderArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#capacity_provider_arn LambdaFunction#capacity_provider_arn}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfig.property.executionEnvironmentMemoryGibPerVcpu">ExecutionEnvironmentMemoryGibPerVcpu</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#execution_environment_memory_gib_per_vcpu LambdaFunction#execution_environment_memory_gib_per_vcpu}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfig.property.perExecutionEnvironmentMaxConcurrency">PerExecutionEnvironmentMaxConcurrency</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#per_execution_environment_max_concurrency LambdaFunction#per_execution_environment_max_concurrency}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfig.property.capacityProviderArn">CapacityProviderArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#capacity_provider_arn LambdaFunction#capacity_provider_arn}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfig.property.executionEnvironmentMemoryGibPerVcpu">ExecutionEnvironmentMemoryGibPerVcpu</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#execution_environment_memory_gib_per_vcpu LambdaFunction#execution_environment_memory_gib_per_vcpu}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfig.property.perExecutionEnvironmentMaxConcurrency">PerExecutionEnvironmentMaxConcurrency</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#per_execution_environment_max_concurrency LambdaFunction#per_execution_environment_max_concurrency}. |
 
 ---
 
@@ -2291,7 +2365,7 @@ CapacityProviderArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#capacity_provider_arn LambdaFunction#capacity_provider_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#capacity_provider_arn LambdaFunction#capacity_provider_arn}.
 
 ---
 
@@ -2303,7 +2377,7 @@ ExecutionEnvironmentMemoryGibPerVcpu *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#execution_environment_memory_gib_per_vcpu LambdaFunction#execution_environment_memory_gib_per_vcpu}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#execution_environment_memory_gib_per_vcpu LambdaFunction#execution_environment_memory_gib_per_vcpu}.
 
 ---
 
@@ -2315,7 +2389,7 @@ PerExecutionEnvironmentMaxConcurrency *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#per_execution_environment_max_concurrency LambdaFunction#per_execution_environment_max_concurrency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#per_execution_environment_max_concurrency LambdaFunction#per_execution_environment_max_concurrency}.
 
 ---
 
@@ -2336,6 +2410,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdafunction"
 	Provisioners: *[]interface{},
 	FunctionName: *string,
 	Role: *string,
+	AcceleratorConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.lambdaFunction.LambdaFunctionAcceleratorConfig,
 	Architectures: *[]*string,
 	CapacityProviderConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.lambdaFunction.LambdaFunctionCapacityProviderConfig,
 	CodeSha256: *string,
@@ -2392,49 +2467,50 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdafunction"
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.functionName">FunctionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#function_name LambdaFunction#function_name}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#role LambdaFunction#role}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.architectures">Architectures</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#architectures LambdaFunction#architectures}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.functionName">FunctionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#function_name LambdaFunction#function_name}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#role LambdaFunction#role}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.acceleratorConfig">AcceleratorConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfig">LambdaFunctionAcceleratorConfig</a></code> | accelerator_config block. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.architectures">Architectures</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#architectures LambdaFunction#architectures}. |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.capacityProviderConfig">CapacityProviderConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionCapacityProviderConfig">LambdaFunctionCapacityProviderConfig</a></code> | capacity_provider_config block. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.codeSha256">CodeSha256</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#code_sha256 LambdaFunction#code_sha256}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.codeSigningConfigArn">CodeSigningConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#code_signing_config_arn LambdaFunction#code_signing_config_arn}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.codeSha256">CodeSha256</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#code_sha256 LambdaFunction#code_sha256}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.codeSigningConfigArn">CodeSigningConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#code_signing_config_arn LambdaFunction#code_signing_config_arn}. |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.deadLetterConfig">DeadLetterConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionDeadLetterConfig">LambdaFunctionDeadLetterConfig</a></code> | dead_letter_config block. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#description LambdaFunction#description}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#description LambdaFunction#description}. |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.durableConfig">DurableConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionDurableConfig">LambdaFunctionDurableConfig</a></code> | durable_config block. |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.environment">Environment</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionEnvironment">LambdaFunctionEnvironment</a></code> | environment block. |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.ephemeralStorage">EphemeralStorage</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionEphemeralStorage">LambdaFunctionEphemeralStorage</a></code> | ephemeral_storage block. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.filename">Filename</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#filename LambdaFunction#filename}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.filename">Filename</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#filename LambdaFunction#filename}. |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.fileSystemConfig">FileSystemConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionFileSystemConfig">LambdaFunctionFileSystemConfig</a></code> | file_system_config block. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.handler">Handler</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#handler LambdaFunction#handler}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#id LambdaFunction#id}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.handler">Handler</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#handler LambdaFunction#handler}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#id LambdaFunction#id}. |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.imageConfig">ImageConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionImageConfig">LambdaFunctionImageConfig</a></code> | image_config block. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.imageUri">ImageUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#image_uri LambdaFunction#image_uri}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#kms_key_arn LambdaFunction#kms_key_arn}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.layers">Layers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#layers LambdaFunction#layers}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.imageUri">ImageUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#image_uri LambdaFunction#image_uri}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#kms_key_arn LambdaFunction#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.layers">Layers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#layers LambdaFunction#layers}. |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.loggingConfig">LoggingConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionLoggingConfig">LambdaFunctionLoggingConfig</a></code> | logging_config block. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.memorySize">MemorySize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#memory_size LambdaFunction#memory_size}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.packageType">PackageType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#package_type LambdaFunction#package_type}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.publish">Publish</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#publish LambdaFunction#publish}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.publishTo">PublishTo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#publish_to LambdaFunction#publish_to}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.memorySize">MemorySize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#memory_size LambdaFunction#memory_size}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.packageType">PackageType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#package_type LambdaFunction#package_type}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.publish">Publish</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#publish LambdaFunction#publish}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.publishTo">PublishTo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#publish_to LambdaFunction#publish_to}. |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.replacementSecurityGroupIds">ReplacementSecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#replacement_security_group_ids LambdaFunction#replacement_security_group_ids}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.replaceSecurityGroupsOnDestroy">ReplaceSecurityGroupsOnDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#replace_security_groups_on_destroy LambdaFunction#replace_security_groups_on_destroy}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.reservedConcurrentExecutions">ReservedConcurrentExecutions</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#reserved_concurrent_executions LambdaFunction#reserved_concurrent_executions}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.runtime">Runtime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#runtime LambdaFunction#runtime}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.s3Bucket">S3Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#s3_bucket LambdaFunction#s3_bucket}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.s3Key">S3Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#s3_key LambdaFunction#s3_key}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.s3ObjectVersion">S3ObjectVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#s3_object_version LambdaFunction#s3_object_version}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.skipDestroy">SkipDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#skip_destroy LambdaFunction#skip_destroy}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.replacementSecurityGroupIds">ReplacementSecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#replacement_security_group_ids LambdaFunction#replacement_security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.replaceSecurityGroupsOnDestroy">ReplaceSecurityGroupsOnDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#replace_security_groups_on_destroy LambdaFunction#replace_security_groups_on_destroy}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.reservedConcurrentExecutions">ReservedConcurrentExecutions</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#reserved_concurrent_executions LambdaFunction#reserved_concurrent_executions}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.runtime">Runtime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#runtime LambdaFunction#runtime}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.s3Bucket">S3Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#s3_bucket LambdaFunction#s3_bucket}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.s3Key">S3Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#s3_key LambdaFunction#s3_key}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.s3ObjectVersion">S3ObjectVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#s3_object_version LambdaFunction#s3_object_version}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.skipDestroy">SkipDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#skip_destroy LambdaFunction#skip_destroy}. |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.snapStart">SnapStart</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionSnapStart">LambdaFunctionSnapStart</a></code> | snap_start block. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.sourceCodeHash">SourceCodeHash</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#source_code_hash LambdaFunction#source_code_hash}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.sourceKmsKeyArn">SourceKmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#source_kms_key_arn LambdaFunction#source_kms_key_arn}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#tags LambdaFunction#tags}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#tags_all LambdaFunction#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.sourceCodeHash">SourceCodeHash</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#source_code_hash LambdaFunction#source_code_hash}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.sourceKmsKeyArn">SourceKmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#source_kms_key_arn LambdaFunction#source_kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#tags LambdaFunction#tags}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#tags_all LambdaFunction#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.tenancyConfig">TenancyConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionTenancyConfig">LambdaFunctionTenancyConfig</a></code> | tenancy_config block. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#timeout LambdaFunction#timeout}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#timeout LambdaFunction#timeout}. |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionTimeouts">LambdaFunctionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.tracingConfig">TracingConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionTracingConfig">LambdaFunctionTracingConfig</a></code> | tracing_config block. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.useResourceTimeoutForPropagation">UseResourceTimeoutForPropagation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#use_resource_timeout_for_propagation LambdaFunction#use_resource_timeout_for_propagation}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.useResourceTimeoutForPropagation">UseResourceTimeoutForPropagation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#use_resource_timeout_for_propagation LambdaFunction#use_resource_timeout_for_propagation}. |
 | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.vpcConfig">VpcConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionVpcConfig">LambdaFunctionVpcConfig</a></code> | vpc_config block. |
 
 ---
@@ -2517,7 +2593,7 @@ FunctionName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#function_name LambdaFunction#function_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#function_name LambdaFunction#function_name}.
 
 ---
 
@@ -2529,7 +2605,21 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#role LambdaFunction#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#role LambdaFunction#role}.
+
+---
+
+##### `AcceleratorConfig`<sup>Optional</sup> <a name="AcceleratorConfig" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionConfig.property.acceleratorConfig"></a>
+
+```go
+AcceleratorConfig LambdaFunctionAcceleratorConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfig">LambdaFunctionAcceleratorConfig</a>
+
+accelerator_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#accelerator_config LambdaFunction#accelerator_config}
 
 ---
 
@@ -2541,7 +2631,7 @@ Architectures *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#architectures LambdaFunction#architectures}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#architectures LambdaFunction#architectures}.
 
 ---
 
@@ -2555,7 +2645,7 @@ CapacityProviderConfig LambdaFunctionCapacityProviderConfig
 
 capacity_provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#capacity_provider_config LambdaFunction#capacity_provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#capacity_provider_config LambdaFunction#capacity_provider_config}
 
 ---
 
@@ -2567,7 +2657,7 @@ CodeSha256 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#code_sha256 LambdaFunction#code_sha256}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#code_sha256 LambdaFunction#code_sha256}.
 
 ---
 
@@ -2579,7 +2669,7 @@ CodeSigningConfigArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#code_signing_config_arn LambdaFunction#code_signing_config_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#code_signing_config_arn LambdaFunction#code_signing_config_arn}.
 
 ---
 
@@ -2593,7 +2683,7 @@ DeadLetterConfig LambdaFunctionDeadLetterConfig
 
 dead_letter_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#dead_letter_config LambdaFunction#dead_letter_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#dead_letter_config LambdaFunction#dead_letter_config}
 
 ---
 
@@ -2605,7 +2695,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#description LambdaFunction#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#description LambdaFunction#description}.
 
 ---
 
@@ -2619,7 +2709,7 @@ DurableConfig LambdaFunctionDurableConfig
 
 durable_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#durable_config LambdaFunction#durable_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#durable_config LambdaFunction#durable_config}
 
 ---
 
@@ -2633,7 +2723,7 @@ Environment LambdaFunctionEnvironment
 
 environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#environment LambdaFunction#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#environment LambdaFunction#environment}
 
 ---
 
@@ -2647,7 +2737,7 @@ EphemeralStorage LambdaFunctionEphemeralStorage
 
 ephemeral_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#ephemeral_storage LambdaFunction#ephemeral_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#ephemeral_storage LambdaFunction#ephemeral_storage}
 
 ---
 
@@ -2659,7 +2749,7 @@ Filename *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#filename LambdaFunction#filename}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#filename LambdaFunction#filename}.
 
 ---
 
@@ -2673,7 +2763,7 @@ FileSystemConfig LambdaFunctionFileSystemConfig
 
 file_system_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#file_system_config LambdaFunction#file_system_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#file_system_config LambdaFunction#file_system_config}
 
 ---
 
@@ -2685,7 +2775,7 @@ Handler *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#handler LambdaFunction#handler}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#handler LambdaFunction#handler}.
 
 ---
 
@@ -2697,7 +2787,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#id LambdaFunction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#id LambdaFunction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2714,7 +2804,7 @@ ImageConfig LambdaFunctionImageConfig
 
 image_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#image_config LambdaFunction#image_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#image_config LambdaFunction#image_config}
 
 ---
 
@@ -2726,7 +2816,7 @@ ImageUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#image_uri LambdaFunction#image_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#image_uri LambdaFunction#image_uri}.
 
 ---
 
@@ -2738,7 +2828,7 @@ KmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#kms_key_arn LambdaFunction#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#kms_key_arn LambdaFunction#kms_key_arn}.
 
 ---
 
@@ -2750,7 +2840,7 @@ Layers *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#layers LambdaFunction#layers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#layers LambdaFunction#layers}.
 
 ---
 
@@ -2764,7 +2854,7 @@ LoggingConfig LambdaFunctionLoggingConfig
 
 logging_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#logging_config LambdaFunction#logging_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#logging_config LambdaFunction#logging_config}
 
 ---
 
@@ -2776,7 +2866,7 @@ MemorySize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#memory_size LambdaFunction#memory_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#memory_size LambdaFunction#memory_size}.
 
 ---
 
@@ -2788,7 +2878,7 @@ PackageType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#package_type LambdaFunction#package_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#package_type LambdaFunction#package_type}.
 
 ---
 
@@ -2800,7 +2890,7 @@ Publish interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#publish LambdaFunction#publish}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#publish LambdaFunction#publish}.
 
 ---
 
@@ -2812,7 +2902,7 @@ PublishTo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#publish_to LambdaFunction#publish_to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#publish_to LambdaFunction#publish_to}.
 
 ---
 
@@ -2826,7 +2916,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#region LambdaFunction#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#region LambdaFunction#region}
 
 ---
 
@@ -2838,7 +2928,7 @@ ReplacementSecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#replacement_security_group_ids LambdaFunction#replacement_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#replacement_security_group_ids LambdaFunction#replacement_security_group_ids}.
 
 ---
 
@@ -2850,7 +2940,7 @@ ReplaceSecurityGroupsOnDestroy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#replace_security_groups_on_destroy LambdaFunction#replace_security_groups_on_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#replace_security_groups_on_destroy LambdaFunction#replace_security_groups_on_destroy}.
 
 ---
 
@@ -2862,7 +2952,7 @@ ReservedConcurrentExecutions *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#reserved_concurrent_executions LambdaFunction#reserved_concurrent_executions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#reserved_concurrent_executions LambdaFunction#reserved_concurrent_executions}.
 
 ---
 
@@ -2874,7 +2964,7 @@ Runtime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#runtime LambdaFunction#runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#runtime LambdaFunction#runtime}.
 
 ---
 
@@ -2886,7 +2976,7 @@ S3Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#s3_bucket LambdaFunction#s3_bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#s3_bucket LambdaFunction#s3_bucket}.
 
 ---
 
@@ -2898,7 +2988,7 @@ S3Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#s3_key LambdaFunction#s3_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#s3_key LambdaFunction#s3_key}.
 
 ---
 
@@ -2910,7 +3000,7 @@ S3ObjectVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#s3_object_version LambdaFunction#s3_object_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#s3_object_version LambdaFunction#s3_object_version}.
 
 ---
 
@@ -2922,7 +3012,7 @@ SkipDestroy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#skip_destroy LambdaFunction#skip_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#skip_destroy LambdaFunction#skip_destroy}.
 
 ---
 
@@ -2936,7 +3026,7 @@ SnapStart LambdaFunctionSnapStart
 
 snap_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#snap_start LambdaFunction#snap_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#snap_start LambdaFunction#snap_start}
 
 ---
 
@@ -2948,7 +3038,7 @@ SourceCodeHash *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#source_code_hash LambdaFunction#source_code_hash}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#source_code_hash LambdaFunction#source_code_hash}.
 
 ---
 
@@ -2960,7 +3050,7 @@ SourceKmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#source_kms_key_arn LambdaFunction#source_kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#source_kms_key_arn LambdaFunction#source_kms_key_arn}.
 
 ---
 
@@ -2972,7 +3062,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#tags LambdaFunction#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#tags LambdaFunction#tags}.
 
 ---
 
@@ -2984,7 +3074,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#tags_all LambdaFunction#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#tags_all LambdaFunction#tags_all}.
 
 ---
 
@@ -2998,7 +3088,7 @@ TenancyConfig LambdaFunctionTenancyConfig
 
 tenancy_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#tenancy_config LambdaFunction#tenancy_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#tenancy_config LambdaFunction#tenancy_config}
 
 ---
 
@@ -3010,7 +3100,7 @@ Timeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#timeout LambdaFunction#timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#timeout LambdaFunction#timeout}.
 
 ---
 
@@ -3024,7 +3114,7 @@ Timeouts LambdaFunctionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#timeouts LambdaFunction#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#timeouts LambdaFunction#timeouts}
 
 ---
 
@@ -3038,7 +3128,7 @@ TracingConfig LambdaFunctionTracingConfig
 
 tracing_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#tracing_config LambdaFunction#tracing_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#tracing_config LambdaFunction#tracing_config}
 
 ---
 
@@ -3050,7 +3140,7 @@ UseResourceTimeoutForPropagation interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#use_resource_timeout_for_propagation LambdaFunction#use_resource_timeout_for_propagation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#use_resource_timeout_for_propagation LambdaFunction#use_resource_timeout_for_propagation}.
 
 ---
 
@@ -3064,7 +3154,7 @@ VpcConfig LambdaFunctionVpcConfig
 
 vpc_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#vpc_config LambdaFunction#vpc_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#vpc_config LambdaFunction#vpc_config}
 
 ---
 
@@ -3084,7 +3174,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdafunction"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionDeadLetterConfig.property.targetArn">TargetArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#target_arn LambdaFunction#target_arn}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionDeadLetterConfig.property.targetArn">TargetArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#target_arn LambdaFunction#target_arn}. |
 
 ---
 
@@ -3096,7 +3186,7 @@ TargetArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#target_arn LambdaFunction#target_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#target_arn LambdaFunction#target_arn}.
 
 ---
 
@@ -3118,9 +3208,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdafunction"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionDurableConfig.property.executionTimeout">ExecutionTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#execution_timeout LambdaFunction#execution_timeout}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionDurableConfig.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#kms_key_arn LambdaFunction#kms_key_arn}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionDurableConfig.property.retentionPeriod">RetentionPeriod</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#retention_period LambdaFunction#retention_period}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionDurableConfig.property.executionTimeout">ExecutionTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#execution_timeout LambdaFunction#execution_timeout}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionDurableConfig.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#kms_key_arn LambdaFunction#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionDurableConfig.property.retentionPeriod">RetentionPeriod</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#retention_period LambdaFunction#retention_period}. |
 
 ---
 
@@ -3132,7 +3222,7 @@ ExecutionTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#execution_timeout LambdaFunction#execution_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#execution_timeout LambdaFunction#execution_timeout}.
 
 ---
 
@@ -3144,7 +3234,7 @@ KmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#kms_key_arn LambdaFunction#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#kms_key_arn LambdaFunction#kms_key_arn}.
 
 ---
 
@@ -3156,7 +3246,7 @@ RetentionPeriod *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#retention_period LambdaFunction#retention_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#retention_period LambdaFunction#retention_period}.
 
 ---
 
@@ -3176,7 +3266,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdafunction"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionEnvironment.property.variables">Variables</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#variables LambdaFunction#variables}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionEnvironment.property.variables">Variables</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#variables LambdaFunction#variables}. |
 
 ---
 
@@ -3188,7 +3278,7 @@ Variables *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#variables LambdaFunction#variables}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#variables LambdaFunction#variables}.
 
 ---
 
@@ -3208,7 +3298,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdafunction"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionEphemeralStorage.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#size LambdaFunction#size}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionEphemeralStorage.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#size LambdaFunction#size}. |
 
 ---
 
@@ -3220,7 +3310,7 @@ Size *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#size LambdaFunction#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#size LambdaFunction#size}.
 
 ---
 
@@ -3241,8 +3331,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdafunction"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionFileSystemConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#arn LambdaFunction#arn}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionFileSystemConfig.property.localMountPath">LocalMountPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#local_mount_path LambdaFunction#local_mount_path}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionFileSystemConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#arn LambdaFunction#arn}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionFileSystemConfig.property.localMountPath">LocalMountPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#local_mount_path LambdaFunction#local_mount_path}. |
 
 ---
 
@@ -3254,7 +3344,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#arn LambdaFunction#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#arn LambdaFunction#arn}.
 
 ---
 
@@ -3266,7 +3356,7 @@ LocalMountPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#local_mount_path LambdaFunction#local_mount_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#local_mount_path LambdaFunction#local_mount_path}.
 
 ---
 
@@ -3288,9 +3378,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdafunction"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionImageConfig.property.command">Command</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#command LambdaFunction#command}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionImageConfig.property.entryPoint">EntryPoint</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#entry_point LambdaFunction#entry_point}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionImageConfig.property.workingDirectory">WorkingDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#working_directory LambdaFunction#working_directory}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionImageConfig.property.command">Command</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#command LambdaFunction#command}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionImageConfig.property.entryPoint">EntryPoint</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#entry_point LambdaFunction#entry_point}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionImageConfig.property.workingDirectory">WorkingDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#working_directory LambdaFunction#working_directory}. |
 
 ---
 
@@ -3302,7 +3392,7 @@ Command *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#command LambdaFunction#command}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#command LambdaFunction#command}.
 
 ---
 
@@ -3314,7 +3404,7 @@ EntryPoint *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#entry_point LambdaFunction#entry_point}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#entry_point LambdaFunction#entry_point}.
 
 ---
 
@@ -3326,7 +3416,7 @@ WorkingDirectory *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#working_directory LambdaFunction#working_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#working_directory LambdaFunction#working_directory}.
 
 ---
 
@@ -3349,10 +3439,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdafunction"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionLoggingConfig.property.logFormat">LogFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#log_format LambdaFunction#log_format}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionLoggingConfig.property.applicationLogLevel">ApplicationLogLevel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#application_log_level LambdaFunction#application_log_level}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionLoggingConfig.property.logGroup">LogGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#log_group LambdaFunction#log_group}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionLoggingConfig.property.systemLogLevel">SystemLogLevel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#system_log_level LambdaFunction#system_log_level}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionLoggingConfig.property.logFormat">LogFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#log_format LambdaFunction#log_format}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionLoggingConfig.property.applicationLogLevel">ApplicationLogLevel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#application_log_level LambdaFunction#application_log_level}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionLoggingConfig.property.logGroup">LogGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#log_group LambdaFunction#log_group}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionLoggingConfig.property.systemLogLevel">SystemLogLevel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#system_log_level LambdaFunction#system_log_level}. |
 
 ---
 
@@ -3364,7 +3454,7 @@ LogFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#log_format LambdaFunction#log_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#log_format LambdaFunction#log_format}.
 
 ---
 
@@ -3376,7 +3466,7 @@ ApplicationLogLevel *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#application_log_level LambdaFunction#application_log_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#application_log_level LambdaFunction#application_log_level}.
 
 ---
 
@@ -3388,7 +3478,7 @@ LogGroup *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#log_group LambdaFunction#log_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#log_group LambdaFunction#log_group}.
 
 ---
 
@@ -3400,7 +3490,7 @@ SystemLogLevel *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#system_log_level LambdaFunction#system_log_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#system_log_level LambdaFunction#system_log_level}.
 
 ---
 
@@ -3420,7 +3510,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdafunction"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionSnapStart.property.applyOn">ApplyOn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#apply_on LambdaFunction#apply_on}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionSnapStart.property.applyOn">ApplyOn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#apply_on LambdaFunction#apply_on}. |
 
 ---
 
@@ -3432,7 +3522,7 @@ ApplyOn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#apply_on LambdaFunction#apply_on}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#apply_on LambdaFunction#apply_on}.
 
 ---
 
@@ -3452,7 +3542,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdafunction"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionTenancyConfig.property.tenantIsolationMode">TenantIsolationMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#tenant_isolation_mode LambdaFunction#tenant_isolation_mode}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionTenancyConfig.property.tenantIsolationMode">TenantIsolationMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#tenant_isolation_mode LambdaFunction#tenant_isolation_mode}. |
 
 ---
 
@@ -3464,7 +3554,7 @@ TenantIsolationMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#tenant_isolation_mode LambdaFunction#tenant_isolation_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#tenant_isolation_mode LambdaFunction#tenant_isolation_mode}.
 
 ---
 
@@ -3486,9 +3576,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdafunction"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#create LambdaFunction#create}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#delete LambdaFunction#delete}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#update LambdaFunction#update}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#create LambdaFunction#create}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#delete LambdaFunction#delete}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#update LambdaFunction#update}. |
 
 ---
 
@@ -3500,7 +3590,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#create LambdaFunction#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#create LambdaFunction#create}.
 
 ---
 
@@ -3512,7 +3602,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#delete LambdaFunction#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#delete LambdaFunction#delete}.
 
 ---
 
@@ -3524,7 +3614,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#update LambdaFunction#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#update LambdaFunction#update}.
 
 ---
 
@@ -3544,7 +3634,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdafunction"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionTracingConfig.property.mode">Mode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#mode LambdaFunction#mode}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionTracingConfig.property.mode">Mode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#mode LambdaFunction#mode}. |
 
 ---
 
@@ -3556,7 +3646,7 @@ Mode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#mode LambdaFunction#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#mode LambdaFunction#mode}.
 
 ---
 
@@ -3578,9 +3668,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdafunction"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionVpcConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#security_group_ids LambdaFunction#security_group_ids}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionVpcConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#subnet_ids LambdaFunction#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionVpcConfig.property.ipv6AllowedForDualStack">Ipv6AllowedForDualStack</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#ipv6_allowed_for_dual_stack LambdaFunction#ipv6_allowed_for_dual_stack}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionVpcConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#security_group_ids LambdaFunction#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionVpcConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#subnet_ids LambdaFunction#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionVpcConfig.property.ipv6AllowedForDualStack">Ipv6AllowedForDualStack</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#ipv6_allowed_for_dual_stack LambdaFunction#ipv6_allowed_for_dual_stack}. |
 
 ---
 
@@ -3592,7 +3682,7 @@ SecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#security_group_ids LambdaFunction#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#security_group_ids LambdaFunction#security_group_ids}.
 
 ---
 
@@ -3604,7 +3694,7 @@ SubnetIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#subnet_ids LambdaFunction#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#subnet_ids LambdaFunction#subnet_ids}.
 
 ---
 
@@ -3616,11 +3706,282 @@ Ipv6AllowedForDualStack interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/lambda_function#ipv6_allowed_for_dual_stack LambdaFunction#ipv6_allowed_for_dual_stack}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/lambda_function#ipv6_allowed_for_dual_stack LambdaFunction#ipv6_allowed_for_dual_stack}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### LambdaFunctionAcceleratorConfigOutputReference <a name="LambdaFunctionAcceleratorConfigOutputReference" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdafunction"
+
+lambdafunction.NewLambdaFunctionAcceleratorConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaFunctionAcceleratorConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.property.acceleratorMemorySizeInput">AcceleratorMemorySizeInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.property.acceleratorMemorySize">AcceleratorMemorySize</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfig">LambdaFunctionAcceleratorConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AcceleratorMemorySizeInput`<sup>Optional</sup> <a name="AcceleratorMemorySizeInput" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.property.acceleratorMemorySizeInput"></a>
+
+```go
+func AcceleratorMemorySizeInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `AcceleratorMemorySize`<sup>Required</sup> <a name="AcceleratorMemorySize" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.property.acceleratorMemorySize"></a>
+
+```go
+func AcceleratorMemorySize() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfigOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() LambdaFunctionAcceleratorConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.lambdaFunction.LambdaFunctionAcceleratorConfig">LambdaFunctionAcceleratorConfig</a>
+
+---
+
 
 ### LambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigOutputReference <a name="LambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigOutputReference" id="@cdktn/provider-aws.lambdaFunction.LambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigOutputReference"></a>
 

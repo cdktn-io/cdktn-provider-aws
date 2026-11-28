@@ -4,7 +4,7 @@
 
 ### DataAwsDbInstance <a name="DataAwsDbInstance" id="@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/db_instance aws_db_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/db_instance aws_db_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstance.Initializer"></a>
 
@@ -415,7 +415,7 @@ The construct id used in the generated config for the DataAwsDbInstance to impor
 
 The id of the existing DataAwsDbInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/db_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/db_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -479,6 +479,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0
 | <code><a href="#@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstance.property.preferredMaintenanceWindow">preferredMaintenanceWindow</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstance.property.publiclyAccessible">publiclyAccessible</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstance.property.replicateSourceDb">replicateSourceDb</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstance.property.replicateSourceDbCluster">replicateSourceDbCluster</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstance.property.resourceId">resourceId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstance.property.storageEncrypted">storageEncrypted</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstance.property.storageThroughput">storageThroughput</a></code> | <code>number</code> | *No description.* |
@@ -979,6 +980,16 @@ public readonly replicateSourceDb: string;
 
 ---
 
+##### `replicateSourceDbCluster`<sup>Required</sup> <a name="replicateSourceDbCluster" id="@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstance.property.replicateSourceDbCluster"></a>
+
+```typescript
+public readonly replicateSourceDbCluster: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `resourceId`<sup>Required</sup> <a name="resourceId" id="@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstance.property.resourceId"></a>
 
 ```typescript
@@ -1170,10 +1181,10 @@ const dataAwsDbInstanceConfig: dataAwsDbInstance.DataAwsDbInstanceConfig = { ...
 | <code><a href="#@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstanceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstanceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstanceConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstanceConfig.property.dbInstanceIdentifier">dbInstanceIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/db_instance#db_instance_identifier DataAwsDbInstance#db_instance_identifier}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstanceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/db_instance#id DataAwsDbInstance#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstanceConfig.property.dbInstanceIdentifier">dbInstanceIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/db_instance#db_instance_identifier DataAwsDbInstance#db_instance_identifier}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstanceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/db_instance#id DataAwsDbInstance#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstanceConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstanceConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/db_instance#tags DataAwsDbInstance#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstanceConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/db_instance#tags DataAwsDbInstance#tags}. |
 
 ---
 
@@ -1255,7 +1266,7 @@ public readonly dbInstanceIdentifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/db_instance#db_instance_identifier DataAwsDbInstance#db_instance_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/db_instance#db_instance_identifier DataAwsDbInstance#db_instance_identifier}.
 
 ---
 
@@ -1267,7 +1278,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/db_instance#id DataAwsDbInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/db_instance#id DataAwsDbInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1284,7 +1295,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/db_instance#region DataAwsDbInstance#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/db_instance#region DataAwsDbInstance#region}
 
 ---
 
@@ -1296,7 +1307,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/db_instance#tags DataAwsDbInstance#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/db_instance#tags DataAwsDbInstance#tags}.
 
 ---
 

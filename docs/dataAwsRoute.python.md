@@ -4,7 +4,7 @@
 
 ### DataAwsRoute <a name="DataAwsRoute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route aws_route}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route aws_route}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer"></a>
 
@@ -53,24 +53,24 @@ dataAwsRoute.DataAwsRoute(
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.routeTableId">route_table_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#route_table_id DataAwsRoute#route_table_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.carrierGatewayId">carrier_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#carrier_gateway_id DataAwsRoute#carrier_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.coreNetworkArn">core_network_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#core_network_arn DataAwsRoute#core_network_arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.destinationCidrBlock">destination_cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#destination_cidr_block DataAwsRoute#destination_cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.destinationIpv6CidrBlock">destination_ipv6_cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#destination_ipv6_cidr_block DataAwsRoute#destination_ipv6_cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.destinationPrefixListId">destination_prefix_list_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#destination_prefix_list_id DataAwsRoute#destination_prefix_list_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.egressOnlyGatewayId">egress_only_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#egress_only_gateway_id DataAwsRoute#egress_only_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.gatewayId">gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#gateway_id DataAwsRoute#gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#id DataAwsRoute#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#instance_id DataAwsRoute#instance_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.localGatewayId">local_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#local_gateway_id DataAwsRoute#local_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.natGatewayId">nat_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#nat_gateway_id DataAwsRoute#nat_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.networkInterfaceId">network_interface_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#network_interface_id DataAwsRoute#network_interface_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.odbNetworkArn">odb_network_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#odb_network_arn DataAwsRoute#odb_network_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.routeTableId">route_table_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#route_table_id DataAwsRoute#route_table_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.carrierGatewayId">carrier_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#carrier_gateway_id DataAwsRoute#carrier_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.coreNetworkArn">core_network_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#core_network_arn DataAwsRoute#core_network_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.destinationCidrBlock">destination_cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#destination_cidr_block DataAwsRoute#destination_cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.destinationIpv6CidrBlock">destination_ipv6_cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#destination_ipv6_cidr_block DataAwsRoute#destination_ipv6_cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.destinationPrefixListId">destination_prefix_list_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#destination_prefix_list_id DataAwsRoute#destination_prefix_list_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.egressOnlyGatewayId">egress_only_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#egress_only_gateway_id DataAwsRoute#egress_only_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.gatewayId">gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#gateway_id DataAwsRoute#gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#id DataAwsRoute#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#instance_id DataAwsRoute#instance_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.localGatewayId">local_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#local_gateway_id DataAwsRoute#local_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.natGatewayId">nat_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#nat_gateway_id DataAwsRoute#nat_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.networkInterfaceId">network_interface_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#network_interface_id DataAwsRoute#network_interface_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.odbNetworkArn">odb_network_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#odb_network_arn DataAwsRoute#odb_network_arn}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteTimeouts">DataAwsRouteTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.transitGatewayId">transit_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#transit_gateway_id DataAwsRoute#transit_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.vpcPeeringConnectionId">vpc_peering_connection_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#vpc_peering_connection_id DataAwsRoute#vpc_peering_connection_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.transitGatewayId">transit_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#transit_gateway_id DataAwsRoute#transit_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.Initializer.parameter.vpcPeeringConnectionId">vpc_peering_connection_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#vpc_peering_connection_id DataAwsRoute#vpc_peering_connection_id}. |
 
 ---
 
@@ -138,7 +138,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#route_table_id DataAwsRoute#route_table_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#route_table_id DataAwsRoute#route_table_id}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#carrier_gateway_id DataAwsRoute#carrier_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#carrier_gateway_id DataAwsRoute#carrier_gateway_id}.
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#core_network_arn DataAwsRoute#core_network_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#core_network_arn DataAwsRoute#core_network_arn}.
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#destination_cidr_block DataAwsRoute#destination_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#destination_cidr_block DataAwsRoute#destination_cidr_block}.
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#destination_ipv6_cidr_block DataAwsRoute#destination_ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#destination_ipv6_cidr_block DataAwsRoute#destination_ipv6_cidr_block}.
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#destination_prefix_list_id DataAwsRoute#destination_prefix_list_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#destination_prefix_list_id DataAwsRoute#destination_prefix_list_id}.
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#egress_only_gateway_id DataAwsRoute#egress_only_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#egress_only_gateway_id DataAwsRoute#egress_only_gateway_id}.
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#gateway_id DataAwsRoute#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#gateway_id DataAwsRoute#gateway_id}.
 
 ---
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#id DataAwsRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#id DataAwsRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -213,7 +213,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#instance_id DataAwsRoute#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#instance_id DataAwsRoute#instance_id}.
 
 ---
 
@@ -221,7 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#local_gateway_id DataAwsRoute#local_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#local_gateway_id DataAwsRoute#local_gateway_id}.
 
 ---
 
@@ -229,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#nat_gateway_id DataAwsRoute#nat_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#nat_gateway_id DataAwsRoute#nat_gateway_id}.
 
 ---
 
@@ -237,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#network_interface_id DataAwsRoute#network_interface_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#network_interface_id DataAwsRoute#network_interface_id}.
 
 ---
 
@@ -245,7 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#odb_network_arn DataAwsRoute#odb_network_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#odb_network_arn DataAwsRoute#odb_network_arn}.
 
 ---
 
@@ -255,7 +255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#region DataAwsRoute#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#region DataAwsRoute#region}
 
 ---
 
@@ -265,7 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#timeouts DataAwsRoute#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#timeouts DataAwsRoute#timeouts}
 
 ---
 
@@ -273,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#transit_gateway_id DataAwsRoute#transit_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#transit_gateway_id DataAwsRoute#transit_gateway_id}.
 
 ---
 
@@ -281,7 +281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#vpc_peering_connection_id DataAwsRoute#vpc_peering_connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#vpc_peering_connection_id DataAwsRoute#vpc_peering_connection_id}.
 
 ---
 
@@ -580,7 +580,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#read DataAwsRoute#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#read DataAwsRoute#read}.
 
 ---
 
@@ -800,7 +800,7 @@ The construct id used in the generated config for the DataAwsRoute to import.
 
 The id of the existing DataAwsRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -828,6 +828,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.property.igwFirewall">igw_firewall</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList">DataAwsRouteIgwFirewallList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteTimeoutsOutputReference">DataAwsRouteTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.property.carrierGatewayIdInput">carrier_gateway_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.property.coreNetworkArnInput">core_network_arn_input</a></code> | <code>str</code> | *No description.* |
@@ -986,6 +987,16 @@ provider: TerraformProvider
 ```
 
 - *Type:* cdktn.TerraformProvider
+
+---
+
+##### `igw_firewall`<sup>Required</sup> <a name="igw_firewall" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRoute.property.igwFirewall"></a>
+
+```python
+igw_firewall: DataAwsRouteIgwFirewallList
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList">DataAwsRouteIgwFirewallList</a>
 
 ---
 
@@ -1416,24 +1427,24 @@ dataAwsRoute.DataAwsRouteConfig(
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.routeTableId">route_table_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#route_table_id DataAwsRoute#route_table_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.carrierGatewayId">carrier_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#carrier_gateway_id DataAwsRoute#carrier_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.coreNetworkArn">core_network_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#core_network_arn DataAwsRoute#core_network_arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.destinationCidrBlock">destination_cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#destination_cidr_block DataAwsRoute#destination_cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.destinationIpv6CidrBlock">destination_ipv6_cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#destination_ipv6_cidr_block DataAwsRoute#destination_ipv6_cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.destinationPrefixListId">destination_prefix_list_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#destination_prefix_list_id DataAwsRoute#destination_prefix_list_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.egressOnlyGatewayId">egress_only_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#egress_only_gateway_id DataAwsRoute#egress_only_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.gatewayId">gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#gateway_id DataAwsRoute#gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#id DataAwsRoute#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#instance_id DataAwsRoute#instance_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.localGatewayId">local_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#local_gateway_id DataAwsRoute#local_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.natGatewayId">nat_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#nat_gateway_id DataAwsRoute#nat_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.networkInterfaceId">network_interface_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#network_interface_id DataAwsRoute#network_interface_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.odbNetworkArn">odb_network_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#odb_network_arn DataAwsRoute#odb_network_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.routeTableId">route_table_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#route_table_id DataAwsRoute#route_table_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.carrierGatewayId">carrier_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#carrier_gateway_id DataAwsRoute#carrier_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.coreNetworkArn">core_network_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#core_network_arn DataAwsRoute#core_network_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.destinationCidrBlock">destination_cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#destination_cidr_block DataAwsRoute#destination_cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.destinationIpv6CidrBlock">destination_ipv6_cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#destination_ipv6_cidr_block DataAwsRoute#destination_ipv6_cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.destinationPrefixListId">destination_prefix_list_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#destination_prefix_list_id DataAwsRoute#destination_prefix_list_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.egressOnlyGatewayId">egress_only_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#egress_only_gateway_id DataAwsRoute#egress_only_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.gatewayId">gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#gateway_id DataAwsRoute#gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#id DataAwsRoute#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#instance_id DataAwsRoute#instance_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.localGatewayId">local_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#local_gateway_id DataAwsRoute#local_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.natGatewayId">nat_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#nat_gateway_id DataAwsRoute#nat_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.networkInterfaceId">network_interface_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#network_interface_id DataAwsRoute#network_interface_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.odbNetworkArn">odb_network_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#odb_network_arn DataAwsRoute#odb_network_arn}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteTimeouts">DataAwsRouteTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.transitGatewayId">transit_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#transit_gateway_id DataAwsRoute#transit_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.vpcPeeringConnectionId">vpc_peering_connection_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#vpc_peering_connection_id DataAwsRoute#vpc_peering_connection_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.transitGatewayId">transit_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#transit_gateway_id DataAwsRoute#transit_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteConfig.property.vpcPeeringConnectionId">vpc_peering_connection_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#vpc_peering_connection_id DataAwsRoute#vpc_peering_connection_id}. |
 
 ---
 
@@ -1515,7 +1526,7 @@ route_table_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#route_table_id DataAwsRoute#route_table_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#route_table_id DataAwsRoute#route_table_id}.
 
 ---
 
@@ -1527,7 +1538,7 @@ carrier_gateway_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#carrier_gateway_id DataAwsRoute#carrier_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#carrier_gateway_id DataAwsRoute#carrier_gateway_id}.
 
 ---
 
@@ -1539,7 +1550,7 @@ core_network_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#core_network_arn DataAwsRoute#core_network_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#core_network_arn DataAwsRoute#core_network_arn}.
 
 ---
 
@@ -1551,7 +1562,7 @@ destination_cidr_block: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#destination_cidr_block DataAwsRoute#destination_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#destination_cidr_block DataAwsRoute#destination_cidr_block}.
 
 ---
 
@@ -1563,7 +1574,7 @@ destination_ipv6_cidr_block: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#destination_ipv6_cidr_block DataAwsRoute#destination_ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#destination_ipv6_cidr_block DataAwsRoute#destination_ipv6_cidr_block}.
 
 ---
 
@@ -1575,7 +1586,7 @@ destination_prefix_list_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#destination_prefix_list_id DataAwsRoute#destination_prefix_list_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#destination_prefix_list_id DataAwsRoute#destination_prefix_list_id}.
 
 ---
 
@@ -1587,7 +1598,7 @@ egress_only_gateway_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#egress_only_gateway_id DataAwsRoute#egress_only_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#egress_only_gateway_id DataAwsRoute#egress_only_gateway_id}.
 
 ---
 
@@ -1599,7 +1610,7 @@ gateway_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#gateway_id DataAwsRoute#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#gateway_id DataAwsRoute#gateway_id}.
 
 ---
 
@@ -1611,7 +1622,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#id DataAwsRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#id DataAwsRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1626,7 +1637,7 @@ instance_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#instance_id DataAwsRoute#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#instance_id DataAwsRoute#instance_id}.
 
 ---
 
@@ -1638,7 +1649,7 @@ local_gateway_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#local_gateway_id DataAwsRoute#local_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#local_gateway_id DataAwsRoute#local_gateway_id}.
 
 ---
 
@@ -1650,7 +1661,7 @@ nat_gateway_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#nat_gateway_id DataAwsRoute#nat_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#nat_gateway_id DataAwsRoute#nat_gateway_id}.
 
 ---
 
@@ -1662,7 +1673,7 @@ network_interface_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#network_interface_id DataAwsRoute#network_interface_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#network_interface_id DataAwsRoute#network_interface_id}.
 
 ---
 
@@ -1674,7 +1685,7 @@ odb_network_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#odb_network_arn DataAwsRoute#odb_network_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#odb_network_arn DataAwsRoute#odb_network_arn}.
 
 ---
 
@@ -1688,7 +1699,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#region DataAwsRoute#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#region DataAwsRoute#region}
 
 ---
 
@@ -1702,7 +1713,7 @@ timeouts: DataAwsRouteTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#timeouts DataAwsRoute#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#timeouts DataAwsRoute#timeouts}
 
 ---
 
@@ -1714,7 +1725,7 @@ transit_gateway_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#transit_gateway_id DataAwsRoute#transit_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#transit_gateway_id DataAwsRoute#transit_gateway_id}.
 
 ---
 
@@ -1726,9 +1737,20 @@ vpc_peering_connection_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#vpc_peering_connection_id DataAwsRoute#vpc_peering_connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#vpc_peering_connection_id DataAwsRoute#vpc_peering_connection_id}.
 
 ---
+
+### DataAwsRouteIgwFirewall <a name="DataAwsRouteIgwFirewall" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewall"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewall.Initializer"></a>
+
+```python
+from cdktn_provider_aws import data_aws_route
+
+dataAwsRoute.DataAwsRouteIgwFirewall()
+```
+
 
 ### DataAwsRouteTimeouts <a name="DataAwsRouteTimeouts" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteTimeouts"></a>
 
@@ -1746,7 +1768,7 @@ dataAwsRoute.DataAwsRouteTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#read DataAwsRoute#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#read DataAwsRoute#read}. |
 
 ---
 
@@ -1758,11 +1780,486 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/route#read DataAwsRoute#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/data-sources/route#read DataAwsRoute#read}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### DataAwsRouteIgwFirewallList <a name="DataAwsRouteIgwFirewallList" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.Initializer"></a>
+
+```python
+from cdktn_provider_aws import data_aws_route
+
+dataAwsRoute.DataAwsRouteIgwFirewallList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> DataAwsRouteIgwFirewallOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### DataAwsRouteIgwFirewallOutputReference <a name="DataAwsRouteIgwFirewallOutputReference" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_aws import data_aws_route
+
+dataAwsRoute.DataAwsRouteIgwFirewallOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.property.firewallArn">firewall_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewall">DataAwsRouteIgwFirewall</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `firewall_arn`<sup>Required</sup> <a name="firewall_arn" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.property.firewallArn"></a>
+
+```python
+firewall_arn: str
+```
+
+- *Type:* str
+
+---
+
+##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.property.status"></a>
+
+```python
+status: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewallOutputReference.property.internalValue"></a>
+
+```python
+internal_value: DataAwsRouteIgwFirewall
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsRoute.DataAwsRouteIgwFirewall">DataAwsRouteIgwFirewall</a>
+
+---
+
 
 ### DataAwsRouteTimeoutsOutputReference <a name="DataAwsRouteTimeoutsOutputReference" id="@cdktn/provider-aws.dataAwsRoute.DataAwsRouteTimeoutsOutputReference"></a>
 
