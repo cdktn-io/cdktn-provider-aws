@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_bucket_object_lock_configuration
+// https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_bucket_object_lock_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +13,177 @@ import * as cdktn from 'cdktn';
 
 export interface S3BucketObjectLockConfigurationAConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_bucket_object_lock_configuration#bucket S3BucketObjectLockConfigurationA#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_bucket_object_lock_configuration#bucket S3BucketObjectLockConfigurationA#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_bucket_object_lock_configuration#expected_bucket_owner S3BucketObjectLockConfigurationA#expected_bucket_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_bucket_object_lock_configuration#expected_bucket_owner S3BucketObjectLockConfigurationA#expected_bucket_owner}
   */
   readonly expectedBucketOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_bucket_object_lock_configuration#id S3BucketObjectLockConfigurationA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_bucket_object_lock_configuration#id S3BucketObjectLockConfigurationA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_bucket_object_lock_configuration#object_lock_enabled S3BucketObjectLockConfigurationA#object_lock_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_bucket_object_lock_configuration#object_lock_enabled S3BucketObjectLockConfigurationA#object_lock_enabled}
   */
   readonly objectLockEnabled?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_bucket_object_lock_configuration#region S3BucketObjectLockConfigurationA#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_bucket_object_lock_configuration#region S3BucketObjectLockConfigurationA#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_bucket_object_lock_configuration#token S3BucketObjectLockConfigurationA#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_bucket_object_lock_configuration#token S3BucketObjectLockConfigurationA#token}
   */
   readonly token?: string;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_bucket_object_lock_configuration#rule S3BucketObjectLockConfigurationA#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_bucket_object_lock_configuration#rule S3BucketObjectLockConfigurationA#rule}
   */
   readonly rule?: S3BucketObjectLockConfigurationRuleA;
 }
-export interface S3BucketObjectLockConfigurationRuleDefaultRetentionA {
+export interface S3BucketObjectLockConfigurationRuleDefaultRetentionDefaultEventHold {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_bucket_object_lock_configuration#days S3BucketObjectLockConfigurationA#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_bucket_object_lock_configuration#days S3BucketObjectLockConfigurationA#days}
   */
   readonly days?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_bucket_object_lock_configuration#mode S3BucketObjectLockConfigurationA#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_bucket_object_lock_configuration#years S3BucketObjectLockConfigurationA#years}
+  */
+  readonly years?: number;
+}
+
+export function s3BucketObjectLockConfigurationRuleDefaultRetentionDefaultEventHoldToTerraform(struct?: S3BucketObjectLockConfigurationRuleDefaultRetentionDefaultEventHoldOutputReference | S3BucketObjectLockConfigurationRuleDefaultRetentionDefaultEventHold): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    days: cdktn.numberToTerraform(struct!.days),
+    years: cdktn.numberToTerraform(struct!.years),
+  }
+}
+
+
+export function s3BucketObjectLockConfigurationRuleDefaultRetentionDefaultEventHoldToHclTerraform(struct?: S3BucketObjectLockConfigurationRuleDefaultRetentionDefaultEventHoldOutputReference | S3BucketObjectLockConfigurationRuleDefaultRetentionDefaultEventHold): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    days: {
+      value: cdktn.numberToHclTerraform(struct!.days),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    years: {
+      value: cdktn.numberToHclTerraform(struct!.years),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class S3BucketObjectLockConfigurationRuleDefaultRetentionDefaultEventHoldOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): S3BucketObjectLockConfigurationRuleDefaultRetentionDefaultEventHold | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._days !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.days = this._days;
+    }
+    if (this._years !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.years = this._years;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3BucketObjectLockConfigurationRuleDefaultRetentionDefaultEventHold | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._days = undefined;
+      this._years = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._days = value.days;
+      this._years = value.years;
+    }
+  }
+
+  // days - computed: false, optional: true, required: false
+  private _days?: number; 
+  public get days() {
+    return this.getNumberAttribute('days');
+  }
+  public set days(value: number) {
+    this._days = value;
+  }
+  public resetDays() {
+    this._days = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get daysInput() {
+    return this._days;
+  }
+
+  // years - computed: false, optional: true, required: false
+  private _years?: number; 
+  public get years() {
+    return this.getNumberAttribute('years');
+  }
+  public set years(value: number) {
+    this._years = value;
+  }
+  public resetYears() {
+    this._years = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get yearsInput() {
+    return this._years;
+  }
+}
+export interface S3BucketObjectLockConfigurationRuleDefaultRetentionA {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_bucket_object_lock_configuration#days S3BucketObjectLockConfigurationA#days}
+  */
+  readonly days?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_bucket_object_lock_configuration#mode S3BucketObjectLockConfigurationA#mode}
   */
   readonly mode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_bucket_object_lock_configuration#years S3BucketObjectLockConfigurationA#years}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_bucket_object_lock_configuration#years S3BucketObjectLockConfigurationA#years}
   */
   readonly years?: number;
+  /**
+  * default_event_hold block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_bucket_object_lock_configuration#default_event_hold S3BucketObjectLockConfigurationA#default_event_hold}
+  */
+  readonly defaultEventHold?: S3BucketObjectLockConfigurationRuleDefaultRetentionDefaultEventHold;
 }
 
 export function s3BucketObjectLockConfigurationRuleDefaultRetentionAToTerraform(struct?: S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference | S3BucketObjectLockConfigurationRuleDefaultRetentionA): any {
@@ -72,6 +195,7 @@ export function s3BucketObjectLockConfigurationRuleDefaultRetentionAToTerraform(
     days: cdktn.numberToTerraform(struct!.days),
     mode: cdktn.stringToTerraform(struct!.mode),
     years: cdktn.numberToTerraform(struct!.years),
+    default_event_hold: s3BucketObjectLockConfigurationRuleDefaultRetentionDefaultEventHoldToTerraform(struct!.defaultEventHold),
   }
 }
 
@@ -99,6 +223,12 @@ export function s3BucketObjectLockConfigurationRuleDefaultRetentionAToHclTerrafo
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    default_event_hold: {
+      value: s3BucketObjectLockConfigurationRuleDefaultRetentionDefaultEventHoldToHclTerraform(struct!.defaultEventHold),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketObjectLockConfigurationRuleDefaultRetentionDefaultEventHoldList",
     },
   };
 
@@ -132,6 +262,10 @@ export class S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference
       hasAnyValues = true;
       internalValueResult.years = this._years;
     }
+    if (this._defaultEventHold?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultEventHold = this._defaultEventHold?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -141,12 +275,14 @@ export class S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference
       this._days = undefined;
       this._mode = undefined;
       this._years = undefined;
+      this._defaultEventHold.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._days = value.days;
       this._mode = value.mode;
       this._years = value.years;
+      this._defaultEventHold.internalValue = value.defaultEventHold;
     }
   }
 
@@ -197,12 +333,28 @@ export class S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference
   public get yearsInput() {
     return this._years;
   }
+
+  // default_event_hold - computed: false, optional: true, required: false
+  private _defaultEventHold = new S3BucketObjectLockConfigurationRuleDefaultRetentionDefaultEventHoldOutputReference(this, "default_event_hold");
+  public get defaultEventHold() {
+    return this._defaultEventHold;
+  }
+  public putDefaultEventHold(value: S3BucketObjectLockConfigurationRuleDefaultRetentionDefaultEventHold) {
+    this._defaultEventHold.internalValue = value;
+  }
+  public resetDefaultEventHold() {
+    this._defaultEventHold.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultEventHoldInput() {
+    return this._defaultEventHold.internalValue;
+  }
 }
 export interface S3BucketObjectLockConfigurationRuleA {
   /**
   * default_retention block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_bucket_object_lock_configuration#default_retention S3BucketObjectLockConfigurationA#default_retention}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_bucket_object_lock_configuration#default_retention S3BucketObjectLockConfigurationA#default_retention}
   */
   readonly defaultRetention: S3BucketObjectLockConfigurationRuleDefaultRetentionA;
 }
@@ -283,7 +435,7 @@ export class S3BucketObjectLockConfigurationRuleAOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_bucket_object_lock_configuration aws_s3_bucket_object_lock_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_bucket_object_lock_configuration aws_s3_bucket_object_lock_configuration}
 */
 export class S3BucketObjectLockConfigurationA extends cdktn.TerraformResource {
 
@@ -299,7 +451,7 @@ export class S3BucketObjectLockConfigurationA extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a S3BucketObjectLockConfigurationA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3BucketObjectLockConfigurationA to import
-  * @param importFromId The id of the existing S3BucketObjectLockConfigurationA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_bucket_object_lock_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3BucketObjectLockConfigurationA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_bucket_object_lock_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3BucketObjectLockConfigurationA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -311,7 +463,7 @@ export class S3BucketObjectLockConfigurationA extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/s3_bucket_object_lock_configuration aws_s3_bucket_object_lock_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/s3_bucket_object_lock_configuration aws_s3_bucket_object_lock_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -322,7 +474,7 @@ export class S3BucketObjectLockConfigurationA extends cdktn.TerraformResource {
       terraformResourceType: 'aws_s3_bucket_object_lock_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.71.0',
+        providerVersion: '6.74.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

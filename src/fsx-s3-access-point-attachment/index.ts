@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment
+// https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,49 +13,612 @@ import * as cdktn from 'cdktn';
 
 export interface FsxS3AccessPointAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment#name FsxS3AccessPointAttachment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#name FsxS3AccessPointAttachment#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment#region FsxS3AccessPointAttachment#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#region FsxS3AccessPointAttachment#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment#type FsxS3AccessPointAttachment#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#type FsxS3AccessPointAttachment#type}
   */
   readonly type: string;
   /**
+  * ontap_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#ontap_configuration FsxS3AccessPointAttachment#ontap_configuration}
+  */
+  readonly ontapConfiguration?: FsxS3AccessPointAttachmentOntapConfiguration[] | cdktn.IResolvable;
+  /**
   * openzfs_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment#openzfs_configuration FsxS3AccessPointAttachment#openzfs_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#openzfs_configuration FsxS3AccessPointAttachment#openzfs_configuration}
   */
   readonly openzfsConfiguration?: FsxS3AccessPointAttachmentOpenzfsConfiguration[] | cdktn.IResolvable;
   /**
   * s3_access_point block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment#s3_access_point FsxS3AccessPointAttachment#s3_access_point}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#s3_access_point FsxS3AccessPointAttachment#s3_access_point}
   */
   readonly s3AccessPoint?: FsxS3AccessPointAttachmentS3AccessPoint[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment#timeouts FsxS3AccessPointAttachment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#timeouts FsxS3AccessPointAttachment#timeouts}
   */
   readonly timeouts?: FsxS3AccessPointAttachmentTimeouts;
 }
+export interface FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityUnixUser {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#name FsxS3AccessPointAttachment#name}
+  */
+  readonly name: string;
+}
+
+export function fsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityUnixUserToTerraform(struct?: FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityUnixUser | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    name: cdktn.stringToTerraform(struct!.name),
+  }
+}
+
+
+export function fsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityUnixUserToHclTerraform(struct?: FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityUnixUser | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityUnixUserOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityUnixUser | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityUnixUser | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityUnixUserList extends cdktn.ComplexList {
+  public internalValue? : FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityUnixUser[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityUnixUserOutputReference {
+    return new FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityUnixUserOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityWindowsUser {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#name FsxS3AccessPointAttachment#name}
+  */
+  readonly name: string;
+}
+
+export function fsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityWindowsUserToTerraform(struct?: FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityWindowsUser | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    name: cdktn.stringToTerraform(struct!.name),
+  }
+}
+
+
+export function fsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityWindowsUserToHclTerraform(struct?: FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityWindowsUser | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityWindowsUserOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityWindowsUser | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityWindowsUser | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityWindowsUserList extends cdktn.ComplexList {
+  public internalValue? : FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityWindowsUser[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityWindowsUserOutputReference {
+    return new FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityWindowsUserOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentity {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#type FsxS3AccessPointAttachment#type}
+  */
+  readonly type: string;
+  /**
+  * unix_user block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#unix_user FsxS3AccessPointAttachment#unix_user}
+  */
+  readonly unixUser?: FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityUnixUser[] | cdktn.IResolvable;
+  /**
+  * windows_user block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#windows_user FsxS3AccessPointAttachment#windows_user}
+  */
+  readonly windowsUser?: FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityWindowsUser[] | cdktn.IResolvable;
+}
+
+export function fsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityToTerraform(struct?: FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    type: cdktn.stringToTerraform(struct!.type),
+    unix_user: cdktn.listMapper(fsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityUnixUserToTerraform, true)(struct!.unixUser),
+    windows_user: cdktn.listMapper(fsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityWindowsUserToTerraform, true)(struct!.windowsUser),
+  }
+}
+
+
+export function fsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityToHclTerraform(struct?: FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    type: {
+      value: cdktn.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unix_user: {
+      value: cdktn.listMapperHcl(fsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityUnixUserToHclTerraform, true)(struct!.unixUser),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityUnixUserList",
+    },
+    windows_user: {
+      value: cdktn.listMapperHcl(fsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityWindowsUserToHclTerraform, true)(struct!.windowsUser),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityWindowsUserList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentity | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._unixUser?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.unixUser = this._unixUser?.internalValue;
+    }
+    if (this._windowsUser?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.windowsUser = this._windowsUser?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentity | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._type = undefined;
+      this._unixUser.internalValue = undefined;
+      this._windowsUser.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._type = value.type;
+      this._unixUser.internalValue = value.unixUser;
+      this._windowsUser.internalValue = value.windowsUser;
+    }
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // unix_user - computed: false, optional: true, required: false
+  private _unixUser = new FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityUnixUserList(this, "unix_user", false);
+  public get unixUser() {
+    return this._unixUser;
+  }
+  public putUnixUser(value: FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityUnixUser[] | cdktn.IResolvable) {
+    this._unixUser.internalValue = value;
+  }
+  public resetUnixUser() {
+    this._unixUser.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get unixUserInput() {
+    return this._unixUser.internalValue;
+  }
+
+  // windows_user - computed: false, optional: true, required: false
+  private _windowsUser = new FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityWindowsUserList(this, "windows_user", false);
+  public get windowsUser() {
+    return this._windowsUser;
+  }
+  public putWindowsUser(value: FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityWindowsUser[] | cdktn.IResolvable) {
+    this._windowsUser.internalValue = value;
+  }
+  public resetWindowsUser() {
+    this._windowsUser.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get windowsUserInput() {
+    return this._windowsUser.internalValue;
+  }
+}
+
+export class FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityList extends cdktn.ComplexList {
+  public internalValue? : FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentity[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityOutputReference {
+    return new FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface FsxS3AccessPointAttachmentOntapConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#volume_id FsxS3AccessPointAttachment#volume_id}
+  */
+  readonly volumeId: string;
+  /**
+  * file_system_identity block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#file_system_identity FsxS3AccessPointAttachment#file_system_identity}
+  */
+  readonly fileSystemIdentity?: FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentity[] | cdktn.IResolvable;
+}
+
+export function fsxS3AccessPointAttachmentOntapConfigurationToTerraform(struct?: FsxS3AccessPointAttachmentOntapConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    volume_id: cdktn.stringToTerraform(struct!.volumeId),
+    file_system_identity: cdktn.listMapper(fsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityToTerraform, true)(struct!.fileSystemIdentity),
+  }
+}
+
+
+export function fsxS3AccessPointAttachmentOntapConfigurationToHclTerraform(struct?: FsxS3AccessPointAttachmentOntapConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    volume_id: {
+      value: cdktn.stringToHclTerraform(struct!.volumeId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_system_identity: {
+      value: cdktn.listMapperHcl(fsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityToHclTerraform, true)(struct!.fileSystemIdentity),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class FsxS3AccessPointAttachmentOntapConfigurationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): FsxS3AccessPointAttachmentOntapConfiguration | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._volumeId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.volumeId = this._volumeId;
+    }
+    if (this._fileSystemIdentity?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileSystemIdentity = this._fileSystemIdentity?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FsxS3AccessPointAttachmentOntapConfiguration | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._volumeId = undefined;
+      this._fileSystemIdentity.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._volumeId = value.volumeId;
+      this._fileSystemIdentity.internalValue = value.fileSystemIdentity;
+    }
+  }
+
+  // volume_id - computed: false, optional: false, required: true
+  private _volumeId?: string; 
+  public get volumeId() {
+    return this.getStringAttribute('volume_id');
+  }
+  public set volumeId(value: string) {
+    this._volumeId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get volumeIdInput() {
+    return this._volumeId;
+  }
+
+  // file_system_identity - computed: false, optional: true, required: false
+  private _fileSystemIdentity = new FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentityList(this, "file_system_identity", false);
+  public get fileSystemIdentity() {
+    return this._fileSystemIdentity;
+  }
+  public putFileSystemIdentity(value: FsxS3AccessPointAttachmentOntapConfigurationFileSystemIdentity[] | cdktn.IResolvable) {
+    this._fileSystemIdentity.internalValue = value;
+  }
+  public resetFileSystemIdentity() {
+    this._fileSystemIdentity.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileSystemIdentityInput() {
+    return this._fileSystemIdentity.internalValue;
+  }
+}
+
+export class FsxS3AccessPointAttachmentOntapConfigurationList extends cdktn.ComplexList {
+  public internalValue? : FsxS3AccessPointAttachmentOntapConfiguration[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): FsxS3AccessPointAttachmentOntapConfigurationOutputReference {
+    return new FsxS3AccessPointAttachmentOntapConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPosixUser {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment#gid FsxS3AccessPointAttachment#gid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#gid FsxS3AccessPointAttachment#gid}
   */
   readonly gid: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment#secondary_gids FsxS3AccessPointAttachment#secondary_gids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#secondary_gids FsxS3AccessPointAttachment#secondary_gids}
   */
   readonly secondaryGids?: number[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment#uid FsxS3AccessPointAttachment#uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#uid FsxS3AccessPointAttachment#uid}
   */
   readonly uid: number;
 }
@@ -223,13 +786,13 @@ export class FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPos
 }
 export interface FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment#type FsxS3AccessPointAttachment#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#type FsxS3AccessPointAttachment#type}
   */
   readonly type: string;
   /**
   * posix_user block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment#posix_user FsxS3AccessPointAttachment#posix_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#posix_user FsxS3AccessPointAttachment#posix_user}
   */
   readonly posixUser?: FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPosixUser[] | cdktn.IResolvable;
 }
@@ -371,13 +934,13 @@ export class FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityLis
 }
 export interface FsxS3AccessPointAttachmentOpenzfsConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment#volume_id FsxS3AccessPointAttachment#volume_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#volume_id FsxS3AccessPointAttachment#volume_id}
   */
   readonly volumeId: string;
   /**
   * file_system_identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment#file_system_identity FsxS3AccessPointAttachment#file_system_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#file_system_identity FsxS3AccessPointAttachment#file_system_identity}
   */
   readonly fileSystemIdentity?: FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentity[] | cdktn.IResolvable;
 }
@@ -519,7 +1082,7 @@ export class FsxS3AccessPointAttachmentOpenzfsConfigurationList extends cdktn.Co
 }
 export interface FsxS3AccessPointAttachmentS3AccessPointVpcConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment#vpc_id FsxS3AccessPointAttachment#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#vpc_id FsxS3AccessPointAttachment#vpc_id}
   */
   readonly vpcId?: string;
 }
@@ -635,13 +1198,13 @@ export class FsxS3AccessPointAttachmentS3AccessPointVpcConfigurationList extends
 }
 export interface FsxS3AccessPointAttachmentS3AccessPoint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment#policy FsxS3AccessPointAttachment#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#policy FsxS3AccessPointAttachment#policy}
   */
   readonly policy?: string;
   /**
   * vpc_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment#vpc_configuration FsxS3AccessPointAttachment#vpc_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#vpc_configuration FsxS3AccessPointAttachment#vpc_configuration}
   */
   readonly vpcConfiguration?: FsxS3AccessPointAttachmentS3AccessPointVpcConfiguration[] | cdktn.IResolvable;
 }
@@ -788,13 +1351,13 @@ export interface FsxS3AccessPointAttachmentTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment#create FsxS3AccessPointAttachment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#create FsxS3AccessPointAttachment#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment#delete FsxS3AccessPointAttachment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#delete FsxS3AccessPointAttachment#delete}
   */
   readonly delete?: string;
 }
@@ -917,7 +1480,7 @@ export class FsxS3AccessPointAttachmentTimeoutsOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment aws_fsx_s3_access_point_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment aws_fsx_s3_access_point_attachment}
 */
 export class FsxS3AccessPointAttachment extends cdktn.TerraformResource {
 
@@ -933,7 +1496,7 @@ export class FsxS3AccessPointAttachment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FsxS3AccessPointAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FsxS3AccessPointAttachment to import
-  * @param importFromId The id of the existing FsxS3AccessPointAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FsxS3AccessPointAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FsxS3AccessPointAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -945,7 +1508,7 @@ export class FsxS3AccessPointAttachment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/fsx_s3_access_point_attachment aws_fsx_s3_access_point_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.74.0/docs/resources/fsx_s3_access_point_attachment aws_fsx_s3_access_point_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -956,7 +1519,7 @@ export class FsxS3AccessPointAttachment extends cdktn.TerraformResource {
       terraformResourceType: 'aws_fsx_s3_access_point_attachment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.71.0',
+        providerVersion: '6.74.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -970,6 +1533,7 @@ export class FsxS3AccessPointAttachment extends cdktn.TerraformResource {
     this._name = config.name;
     this._region = config.region;
     this._type = config.type;
+    this._ontapConfiguration.internalValue = config.ontapConfiguration;
     this._openzfsConfiguration.internalValue = config.openzfsConfiguration;
     this._s3AccessPoint.internalValue = config.s3AccessPoint;
     this._timeouts.internalValue = config.timeouts;
@@ -1031,6 +1595,22 @@ export class FsxS3AccessPointAttachment extends cdktn.TerraformResource {
     return this._type;
   }
 
+  // ontap_configuration - computed: false, optional: true, required: false
+  private _ontapConfiguration = new FsxS3AccessPointAttachmentOntapConfigurationList(this, "ontap_configuration", false);
+  public get ontapConfiguration() {
+    return this._ontapConfiguration;
+  }
+  public putOntapConfiguration(value: FsxS3AccessPointAttachmentOntapConfiguration[] | cdktn.IResolvable) {
+    this._ontapConfiguration.internalValue = value;
+  }
+  public resetOntapConfiguration() {
+    this._ontapConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ontapConfigurationInput() {
+    return this._ontapConfiguration.internalValue;
+  }
+
   // openzfs_configuration - computed: false, optional: true, required: false
   private _openzfsConfiguration = new FsxS3AccessPointAttachmentOpenzfsConfigurationList(this, "openzfs_configuration", false);
   public get openzfsConfiguration() {
@@ -1088,6 +1668,7 @@ export class FsxS3AccessPointAttachment extends cdktn.TerraformResource {
       name: cdktn.stringToTerraform(this._name),
       region: cdktn.stringToTerraform(this._region),
       type: cdktn.stringToTerraform(this._type),
+      ontap_configuration: cdktn.listMapper(fsxS3AccessPointAttachmentOntapConfigurationToTerraform, true)(this._ontapConfiguration.internalValue),
       openzfs_configuration: cdktn.listMapper(fsxS3AccessPointAttachmentOpenzfsConfigurationToTerraform, true)(this._openzfsConfiguration.internalValue),
       s3_access_point: cdktn.listMapper(fsxS3AccessPointAttachmentS3AccessPointToTerraform, true)(this._s3AccessPoint.internalValue),
       timeouts: fsxS3AccessPointAttachmentTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1113,6 +1694,12 @@ export class FsxS3AccessPointAttachment extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      ontap_configuration: {
+        value: cdktn.listMapperHcl(fsxS3AccessPointAttachmentOntapConfigurationToHclTerraform, true)(this._ontapConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FsxS3AccessPointAttachmentOntapConfigurationList",
       },
       openzfs_configuration: {
         value: cdktn.listMapperHcl(fsxS3AccessPointAttachmentOpenzfsConfigurationToHclTerraform, true)(this._openzfsConfiguration.internalValue),
